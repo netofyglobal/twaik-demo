@@ -1,3 +1,4 @@
 FROM nginx:alpine
-COPY index.html /usr/share/nginx/html/index.html
+# Each client served at demos.netofy.com/<client>/ . Add a COPY line per client.
+COPY index.html /usr/share/nginx/html/twaik/index.html
 EXPOSE 80
