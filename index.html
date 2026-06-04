@@ -218,17 +218,13 @@ html[data-theme="dark"] .hero h1 .hl{color:#3DA76C}
 .vprop{display:flex; align-items:center; gap:10px; font-family:var(--f-head); font-weight:600; font-size:.92rem}
 .vprop svg{width:26px; height:26px; color:var(--accent); flex:none}
 /* The 3D globe lives ONLY inside this desktop column (never a full-bleed bg behind text). */
-.hero-orb{display:none}
+.hero-orb{display:block; position:relative; height:300px; margin-top:8px}
 .hero-orb #globe-canvas{position:absolute; inset:0; width:100%; height:100%; pointer-events:none; opacity:0; transition:opacity .6s var(--ease)}
 .hero-orb.webgl-on #globe-canvas{opacity:.95}
 /* static inline-SVG fallback globe: shows on reduced-motion, CDN-fail, or before WebGL boots */
 .orb-fallback{position:absolute; inset:0; display:grid; place-items:center; transition:opacity .5s var(--ease)}
 .hero-orb.webgl-on .orb-fallback{opacity:0; pointer-events:none}
 .orb-fallback svg,.orb-fallback img{width:92%; max-width:430px; height:auto}
-@media(prefers-reduced-motion:reduce){
-  .hero-orb #globe-canvas{display:none}
-  .hero-orb.webgl-on .orb-fallback{opacity:1}
-}
 @media(min-width:900px){
   .hero-grid{grid-template-columns:1.05fr .95fr}
   .hero-orb{display:block; position:relative; height:440px}
@@ -495,9 +491,6 @@ html.twaik-ready .reveal.in{opacity:1; transform:none}
 html.twaik-ready .reveal.d1{transition-delay:.08s}
 html.twaik-ready .reveal.d2{transition-delay:.16s}
 html.twaik-ready .reveal.d3{transition-delay:.24s}
-@media (prefers-reduced-motion:reduce){
-  html.twaik-ready .reveal{opacity:1 !important; transform:none !important; transition:none !important}
-}
 </style>
 </head>
 <body>
@@ -1179,7 +1172,7 @@ html.twaik-ready .reveal.d3{transition-delay:.24s}
   /* ---- reveal on intersect (additive) ---- */
   /* twaik-ready is added INSIDE a requestAnimationFrame AFTER the observer is wired,
      so the opacity:0 default and the .in toggle land in the same frame -> no reveal flicker. */
-  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reduced = false; /* sales demo: always animate on every device, ignore OS reduce-motion */
   if('IntersectionObserver' in window && !reduced){
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(en){ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
@@ -1280,9 +1273,7 @@ html.twaik-ready .reveal.d3{transition-delay:.24s}
   (function initGlobe(){
     if(reduced) return;                 // respect reduced motion (static SVG fallback stays)
     if(typeof THREE === 'undefined') return;  // graceful degrade if CDN fails (static SVG fallback stays)
-    /* confine to >=900px: never render WebGL on mobile / behind text */
-    var deskMQ = window.matchMedia('(min-width:900px)');
-    if(!deskMQ.matches) return;
+    /* runs on mobile + desktop; the orb is its own block (not behind text), so it's safe on small screens */
     var orb = document.getElementById('heroOrb'); if(!orb) return;
     var canvas = document.getElementById('globe-canvas'); if(!canvas) return;
 
