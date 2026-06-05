@@ -572,6 +572,7 @@ html.p-ready .why.in .ic svg>*{ stroke-dasharray:200; animation:draw 1.2s ease f
   var t0=Date.now();
   (function loop(){ requestAnimationFrame(loop); var t=(Date.now()-t0)/1000;
     grp.rotation.y=Math.sin(t*0.45)*0.55; grp.rotation.x=Math.sin(t*0.38)*0.13; grp.rotation.z=Math.sin(t*0.3)*0.04;
+    grp.position.x = host.clientWidth<760 ? -0.4 : (document.documentElement.getAttribute('dir')==='ltr' ? 2.4 : -2.4);
     tooth.position.y=Math.sin(t*0.85)*0.10;
     for(var i=0;i<sparks.length;i++){ var s2=sparks[i],u=s2.userData,an=u.a+t*u.sp; s2.position.set(Math.cos(an)*u.rad,u.y+Math.sin(t*0.8+u.ph)*0.25,Math.sin(an)*u.rad*0.6); var tw=Math.sin(t*2.3+u.ph)*0.5+0.5; s2.scale.setScalar(0.14+tw*0.55); s2.material.opacity=tw*0.95; }
     renderer.render(scene,camera);
