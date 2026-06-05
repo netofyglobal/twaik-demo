@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>مشاريع | Mashaarea — توثيق جوي لمشاريع الكويت الكبرى</title>
+<meta name="description" content="مشاريع (Mashaarea) — توثيق جوي بالدرون لمشاريع الكويت الكبرى، من أول الحفر إلى التسليم. تصوير وتوثيق تقدّم الإنشاء.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2315140F'/%3E%3Crect x='12' y='12' width='40' height='40' rx='6' fill='none' stroke='%23F5B301' stroke-width='5' stroke-dasharray='7 5'/%3E%3C/svg%3E">
+<meta property="og:title" content="مشاريع | Mashaarea — من أول الحفر إلى التسليم">
+<meta property="og:description" content="توثيق جوي بالدرون لمشاريع الكويت الكبرى. تصوير وتوثيق كل مرحلة من المشروع.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1678941347696-7521637e0be8?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{ --maxw:1240px; --r:14px;
+  --serif:"Jost",system-ui,sans-serif; --sans:"Jost",system-ui,sans-serif;
+  --hl:rgba(245,179,1,.55); }
+html[data-theme="light"]{
+  --ink:#F2F1EC; --ink-2:#F8F7F1; --panel:#FFFFFF; --panel-2:#ECEAE0;
+  --line:rgba(20,19,12,.15); --line-soft:rgba(20,19,12,.08);
+  --txt:#15140F; --txt-soft:#4C4A40; --txt-mute:#86837A;
+  --accent:#E0A100; --accent-bright:#F5B301; --accent-deep:#A87A00;
+  --btn-bg:#F5B301; --btn-fg:#15140F;
+  --scrim:linear-gradient(180deg,rgba(12,11,7,.30),rgba(12,11,7,.70) 92%);
+  --shadow:0 26px 60px -34px rgba(40,34,8,.42); }
+html[data-theme="dark"]{
+  --ink:#121109; --ink-2:#18160E; --panel:#1D1A11; --panel-2:#241F14;
+  --line:rgba(245,179,1,.20); --line-soft:rgba(250,244,230,.08);
+  --txt:#F4F0E4; --txt-soft:#BCB7A6; --txt-mute:#857F6E;
+  --accent:#FACC15; --accent-bright:#FFD83A; --accent-deep:#E0A100;
+  --btn-bg:#FACC15; --btn-fg:#15140F;
+  --scrim:linear-gradient(180deg,rgba(6,5,2,.40),rgba(6,5,2,.82) 92%);
+  --shadow:0 26px 60px -30px rgba(0,0,0,.78); }
+html[lang="ar"]{ --serif:"Cairo",sans-serif; --sans:"Tajawal",system-ui,sans-serif; }
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; overflow-x:clip; }
+body{ margin:0; background:var(--ink); color:var(--txt); font-family:var(--sans);
+  font-size:17px; font-weight:400; line-height:1.62; -webkit-font-smoothing:antialiased;
+  transition:background .5s,color .5s; overflow-x:clip; }
+html[lang="ar"] body{ font-size:18px; }
+a{ color:inherit; text-decoration:none; } img{ max-width:100%; display:block; }
+.wrap{ max-width:var(--maxw); margin-inline:auto; padding-inline:clamp(18px,4vw,40px); }
+.section{ padding:clamp(54px,7.5vw,92px) 0; }
+.btn{ display:inline-flex; align-items:center; gap:9px; padding:14px 28px; border-radius:10px;
+  font-weight:700; font-size:.96rem; cursor:pointer; border:1px solid transparent; transition:.25s; font-family:var(--sans); }
+.btn-primary{ background:var(--btn-bg); color:var(--btn-fg); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+.btn-ghost{ border-color:var(--line); color:var(--txt); background:transparent; }
+.btn-ghost:hover{ border-color:var(--accent); }
+.eyebrow{ display:inline-block; font-weight:700; letter-spacing:.06em; text-transform:uppercase;
+  font-size:.98rem; color:#15140F; margin-bottom:18px; padding:.22em .58em .12em;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='40' preserveAspectRatio='none'><path d='M3,27 Q55,18 110,23 T197,20 L196,35 Q110,40 4,37 Z' fill='%23F5B301' opacity='0.85'/></svg>");
+  background-repeat:no-repeat; background-size:100% 100%; }
+html[lang="ar"] .eyebrow{ font-size:1.14rem; letter-spacing:0; }
+.h-sec{ font-family:var(--serif); font-weight:700; font-size:clamp(40px,6.4vw,78px); line-height:1.08; margin:0 0 16px; letter-spacing:-.4px; }
+html[lang="ar"] .h-sec{ line-height:1.22; letter-spacing:0; }
+.h-sec .mark{ color:var(--accent); }
+.lead{ color:var(--txt-soft); max-width:60ch; margin:0; font-size:1.05rem; }
+
+/* header */
+#hdr{ position:sticky; top:0; z-index:60; background:color-mix(in srgb,var(--ink) 92%,transparent); border-bottom:1px solid var(--line-soft); }
+@media(min-width:901px){ #hdr{ backdrop-filter:blur(14px); background:color-mix(in srgb,var(--ink) 80%,transparent); } }
+#hdr .bar{ display:flex; align-items:center; gap:18px; height:72px; }
+.logo{ font-family:var(--serif); font-weight:900; font-size:1.7rem; letter-spacing:.02em; color:var(--txt); display:flex; align-items:center; gap:9px; }
+html[lang="en"] .logo{ letter-spacing:.14em; font-size:1.4rem; }
+.logo .tab{ width:16px; height:16px; border-radius:4px; border:3px solid var(--accent-bright); }
+nav.links{ display:flex; gap:26px; margin-inline-start:auto; align-items:center; }
+nav.links a{ color:var(--txt-soft); font-weight:500; font-size:.95rem; }
+nav.links a:hover{ color:var(--txt); }
+.controls{ display:flex; align-items:center; gap:8px; }
+.ctrl{ width:40px; height:40px; display:grid; place-items:center; border-radius:50%; border:1px solid var(--line);
+  background:transparent; color:var(--txt); cursor:pointer; font-size:.9rem; font-weight:600; font-family:var(--sans); transition:.2s; }
+.ctrl:hover{ border-color:var(--accent); }
+.hdr-cta{ display:inline-flex; }
+#burger{ display:none; width:42px; height:42px; border-radius:10px; border:1px solid var(--line); background:transparent; cursor:pointer; flex-direction:column; gap:5px; align-items:center; justify-content:center; }
+#burger span{ width:20px; height:2px; background:var(--txt); }
+
+/* hero */
+.hero{ position:relative; min-height:clamp(580px,92vh,880px); display:flex; align-items:flex-end; overflow:hidden; }
+.hero-bg{ position:absolute; inset:0; }
+.hero-bg .slide{ position:absolute; inset:0; background-size:cover; background-position:center; opacity:0; transition:opacity 1.8s ease; }
+.hero-bg .slide.on{ opacity:1; animation:kb 9s ease-out forwards; }
+@keyframes kb{ from{transform:scale(1.02)} to{transform:scale(1.13)} }
+.hero-bg::after{ content:""; position:absolute; inset:0; background:var(--scrim); z-index:1; }
+.hero-inner{ position:relative; z-index:2; width:100%; padding-bottom:clamp(46px,8vh,92px); }
+.hero-copy{ max-width:46ch; color:#fff; }
+.chip{ display:inline-flex; align-items:center; gap:8px; background:rgba(245,179,1,.16); border:1px solid rgba(245,179,1,.5);
+  color:#FFE08A; padding:8px 16px; border-radius:999px; font-weight:600; font-size:.86rem; margin-bottom:22px; backdrop-filter:blur(4px); }
+.hero .eyebrow{ color:rgba(255,255,255,.9); background:none; padding:0; font-size:.82rem; letter-spacing:.16em; }
+html[lang="ar"] .hero .eyebrow{ font-size:.95rem; }
+.hero .btn-ghost{ color:#fff; border-color:rgba(255,255,255,.45); }
+.hero .btn-ghost:hover{ border-color:#fff; }
+.hero h1{ font-family:var(--serif); font-weight:900; font-size:clamp(42px,6.6vw,88px); line-height:1.04; margin:0 0 18px; color:#fff; letter-spacing:-.5px; text-shadow:0 2px 30px rgba(0,0,0,.4); }
+html[lang="ar"] .hero h1{ line-height:1.2; letter-spacing:0; }
+.hero h1 .y{ color:var(--accent-bright); }
+.hero p{ font-size:clamp(1.06rem,1.6vw,1.3rem); color:rgba(255,255,255,.92); margin:0 0 26px; }
+.drone{ position:absolute; top:clamp(7%,11vh,15%); inset-inline-start:50%; width:clamp(124px,16vw,208px); z-index:2; pointer-events:none; filter:drop-shadow(0 20px 24px rgba(0,0,0,.5)); animation:droneFloat 5.5s ease-in-out infinite; }
+.drone svg{ width:100%; height:auto; display:block; }
+@keyframes droneFloat{ 0%,100%{ transform:translateX(-50%) translateY(0) rotate(-1.6deg);} 50%{ transform:translateX(-50%) translateY(-15px) rotate(1.6deg);} }
+.drone .disc{ fill:#fff; opacity:.16; }
+.drone .hub{ fill:#fff; }
+.drone .rotor{ fill:#fff; opacity:.9; transform-box:fill-box; transform-origin:center; animation:rotorSpin .2s linear infinite; }
+.drone .rotor.r2{ animation-duration:.23s; } .drone .rotor.r3{ animation-duration:.18s; } .drone .rotor.r4{ animation-duration:.21s; }
+@keyframes rotorSpin{ to{ transform:rotate(360deg);} }
+.drone .beam{ transform-box:fill-box; transform-origin:top center; animation:droneBeam 2.8s ease-in-out infinite; }
+@keyframes droneBeam{ 0%,100%{ opacity:.08; transform:scaleY(.82);} 50%{ opacity:.32; transform:scaleY(1);} }
+.drone .lens{ animation:droneLens 2.8s ease-in-out infinite; }
+@keyframes droneLens{ 0%,100%{ opacity:.55;} 50%{ opacity:1;} }
+@media(max-width:760px){ .drone{ width:clamp(100px,30vw,150px); top:8%; } }
+.cta-row{ display:flex; gap:13px; flex-wrap:wrap; }
+
+/* timeline (excavation -> handover) */
+.tl{ background:var(--ink-2); border-block:1px solid var(--line-soft); }
+.tl .steps{ display:grid; grid-template-columns:repeat(5,1fr); gap:14px; margin-top:8px; position:relative; }
+.tl .step{ text-align:center; position:relative; }
+.tl .step::before{ content:""; position:absolute; top:30px; inset-inline-start:-50%; width:100%; height:3px; background:var(--line); transform:scaleX(0); transform-origin:right; transition:transform .7s ease; }
+html.m-ready .tl .step.lit::before{ transform:scaleX(1); background:var(--accent-bright); }
+.tl .step:first-child::before{ display:none; }
+.tl .num{ width:60px; height:60px; margin:0 auto 16px; border-radius:50%; display:grid; place-items:center; position:relative; z-index:2;
+  background:var(--panel); border:2px solid var(--accent); color:var(--accent-deep); font-family:var(--serif); font-size:1.5rem; font-weight:700; }
+html.m-ready .tl .num{ transform:scale(.4); opacity:0; transition:transform .6s cubic-bezier(.2,.85,.3,1),opacity .5s; }
+html.m-ready .tl .step.lit .num{ transform:scale(1); opacity:1; }
+.tl h4{ margin:0 0 5px; font-size:1.12rem; font-weight:700; }
+.tl p{ margin:0; color:var(--txt-mute); font-size:.9rem; }
+html.m-ready .tl .step h4, html.m-ready .tl .step p{ opacity:0; transform:translateY(14px); transition:opacity .5s .12s,transform .5s .12s; }
+html.m-ready .tl .step.lit h4, html.m-ready .tl .step.lit p{ opacity:1; transform:none; }
+.tl-drone{ position:absolute; left:0; top:0; width:62px; height:62px; margin-left:-31px; margin-top:-60px; z-index:4; pointer-events:none; opacity:0; transition:opacity .45s ease, transform .55s cubic-bezier(.45,.05,.3,1); filter:drop-shadow(0 9px 11px rgba(0,0,0,.26)); }
+.tl-drone.show{ opacity:1; }
+.tl-drone svg{ width:100%; height:100%; display:block; overflow:visible; }
+.tl-drone .beam{ fill:var(--accent-bright); transform-box:fill-box; transform-origin:top center; animation:droneBeam 2.3s ease-in-out infinite; }
+.tl-drone .arms{ stroke:var(--txt); }
+.tl-drone .disc{ fill:var(--accent-bright); opacity:.18; }
+.tl-drone .rotor{ fill:var(--accent-bright); transform-box:fill-box; transform-origin:center; animation:rotorSpin .2s linear infinite; }
+.tl-drone .rotor.r2{ animation-duration:.23s; } .tl-drone .rotor.r3{ animation-duration:.18s; } .tl-drone .rotor.r4{ animation-duration:.21s; }
+.tl-drone .hub{ fill:var(--accent-deep); }
+.tl-drone .body{ fill:var(--txt); } .tl-drone .body2{ fill:var(--txt); opacity:.82; }
+.tl-drone .gimbal{ fill:var(--txt); }
+.tl-drone .lens{ fill:var(--accent-bright); animation:droneLens 2.3s ease-in-out infinite; }
+@media(max-width:760px){ .tl-drone{ margin-top:-48px; width:54px; height:54px; margin-left:-27px; } }
+
+/* services */
+.svc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:38px; }
+.card{ background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:30px 26px; transition:.35s; position:relative; overflow:hidden; }
+.card:hover{ border-color:var(--accent); transform:translateY(-5px); box-shadow:var(--shadow); }
+.card .ic{ width:52px; height:52px; border-radius:12px; display:grid; place-items:center; border:1px solid color-mix(in srgb,var(--accent) 40%,var(--line));
+  background:color-mix(in srgb,var(--accent) 14%,transparent); color:var(--accent-deep); margin-bottom:20px; transition:.35s; }
+.card:hover .ic{ background:var(--accent-bright); color:#15140F; transform:translateY(-3px); }
+.card h3{ font-size:1.22rem; margin:0 0 9px; font-weight:700; }
+.card p{ margin:0; color:var(--txt-soft); font-size:.95rem; }
+
+/* capability band */
+.cap{ background:#15140F; color:#F4F0E4; }
+.cap .grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:24px; text-align:center; }
+.cap .stat .n{ font-family:var(--serif); font-size:clamp(52px,8vw,104px); font-weight:900; line-height:1; color:var(--accent-bright); }
+.cap .stat .l{ margin-top:6px; color:#B7B2A2; letter-spacing:.06em; text-transform:uppercase; font-size:.86rem; }
+html[lang="ar"] .cap .stat .l{ text-transform:none; font-size:1rem; }
+.cap .line{ text-align:center; margin:34px auto 0; max-width:50ch; color:#CFC9B8; }
+
+/* projects */
+.pf-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:30px; }
+.pf{ position:relative; border-radius:var(--r); overflow:hidden; aspect-ratio:4/3; background:var(--panel-2); }
+.pf img{ width:100%; height:100%; object-fit:cover; transition:.6s; }
+.pf:hover img{ transform:scale(1.07); }
+.pf .cap2{ position:absolute; inset-inline:0; inset-block-end:0; padding:18px; background:linear-gradient(0deg,rgba(8,7,3,.88),transparent); color:#fff; }
+.pf .cap2 b{ font-weight:700; font-size:1.05rem; display:block; }
+.pf .cap2 small{ color:var(--accent-bright); font-size:.8rem; letter-spacing:.04em; }
+
+/* who we serve */
+.who-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:34px; }
+.who{ background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:28px; transition:.3s; }
+.who:hover{ border-color:var(--accent); transform:translateY(-3px); box-shadow:var(--shadow); }
+.who .ic{ position:relative; width:54px; height:54px; display:grid; place-items:center; border-radius:14px; border:1px solid color-mix(in srgb,var(--accent) 38%,var(--line)); background:color-mix(in srgb,var(--accent) 10%,transparent); color:var(--accent-deep); margin-bottom:16px; transition:.3s; }
+.who:hover .ic{ background:var(--accent-bright); color:#15140F; transform:translateY(-2px); }
+.who .ic::after{ content:""; position:absolute; inset:-1px; border-radius:15px; border:1.5px solid var(--accent-bright); opacity:0; pointer-events:none; }
+@keyframes nfyPing{ 0%{ transform:scale(.92); opacity:.7; } 70%{ opacity:0; } 100%{ transform:scale(1.55); opacity:0; } }
+html.m-ready .who.in .ic::after{ animation:nfyPing 2s ease-out var(--pd,0ms) infinite; }
+.who h3{ margin:0 0 8px; font-size:1.18rem; font-weight:700; }
+.who p{ margin:0; color:var(--txt-soft); font-size:.95rem; }
+
+/* why chips */
+.chips{ display:flex; flex-wrap:wrap; justify-content:center; gap:12px; margin-top:32px; }
+.chips .c{ display:inline-flex; align-items:center; gap:11px; border:1px solid var(--line); border-radius:999px; padding:8px 20px 8px 9px; font-weight:600; background:var(--panel); transition:.28s; }
+html[dir="rtl"] .chips .c{ padding:8px 9px 8px 20px; }
+.chips .c:hover{ border-color:var(--accent); transform:translateY(-2px); box-shadow:var(--shadow); }
+.chips .c .dot{ width:9px; height:9px; border-radius:50%; background:var(--accent-bright); flex-shrink:0; }
+.chips .c .ci{ width:32px; height:32px; display:grid; place-items:center; border-radius:50%; background:color-mix(in srgb,var(--accent) 15%,transparent); color:var(--accent-deep); flex-shrink:0; transition:.28s; }
+.chips .c:hover .ci{ background:var(--accent-bright); color:#15140F; transform:rotate(-6deg); }
+
+/* contact */
+.contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:36px; margin-top:34px; }
+.lead-form{ display:grid; gap:16px; background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:30px; box-shadow:var(--shadow); }
+.lead-form .row{ display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.lead-form .fld{ display:grid; gap:7px; }
+.lead-form label{ font-size:.8rem; font-weight:700; color:var(--txt-soft); }
+.lead-form input,.lead-form select,.lead-form textarea{ width:100%; padding:14px 16px; border-radius:10px; border:1px solid var(--line); background:var(--ink-2); color:var(--txt); font-family:var(--sans); font-size:.98rem; transition:.2s; }
+.lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{ outline:none; border-color:var(--accent); background:var(--panel); box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent); }
+.lead-form textarea{ min-height:100px; resize:vertical; }
+html[lang="ar"] .lead-form input,html[lang="ar"] .lead-form select,html[lang="ar"] .lead-form textarea{ text-align:right; direction:rtl; }
+html[lang="ar"] .lead-form input::placeholder,html[lang="ar"] .lead-form textarea::placeholder{ text-align:right; }
+.lead-form button{ margin-top:6px; justify-content:center; }
+.info-line{ display:flex; align-items:center; gap:13px; padding:15px 0; border-bottom:1px solid var(--line-soft); color:inherit; text-decoration:none; transition:.25s; }
+a.info-line:hover{ color:var(--accent-deep); }
+.info-line .ic{ width:42px; height:42px; border-radius:11px; display:grid; place-items:center; border:1px solid color-mix(in srgb,var(--accent) 36%,var(--line)); background:color-mix(in srgb,var(--accent) 12%,transparent); color:var(--accent-deep); flex-shrink:0; transition:.25s; }
+a.info-line:hover .ic{ background:var(--accent-bright); color:#15140F; }
+.info-line b{ display:block; font-weight:700; }
+.info-line span{ color:var(--txt-mute); font-size:.88rem; }
+.map{ width:100%; height:230px; border:0; border-radius:var(--r); margin-top:18px; }
+html[data-theme="dark"] .map{ filter:invert(.92) hue-rotate(180deg) brightness(.95); }
+
+/* footer */
+footer{ background:#15130c; color:#c3bdac; padding:64px 0 30px; border-top:3px solid var(--accent-bright); }
+footer .logo{ color:#fff; }
+.foot-grid{ display:grid; grid-template-columns:1.7fr 1fr 1.1fr; gap:34px; align-items:start; }
+.foot-tag{ color:#968f82; max-width:42ch; margin:16px 0 22px; font-size:.95rem; line-height:1.75; }
+.foot-grid h4{ color:#fff; font-size:1rem; margin:0 0 16px; font-weight:700; }
+.foot-grid a{ display:block; color:#b6b0a2; padding:6px 0; font-size:.94rem; transition:.2s; }
+.foot-grid a:hover{ color:var(--accent-bright); }
+.foot-social{ display:flex; gap:10px; }
+.foot-grid a.foot-soc{ width:40px; height:40px; padding:0; border-radius:50%; display:grid; place-items:center; border:1px solid rgba(255,255,255,.16); color:#cfc9b8; }
+.foot-grid a.foot-soc:hover{ background:var(--accent-bright); color:#15140F; border-color:var(--accent-bright); transform:translateY(-3px); }
+.foot-grid a.foot-ct{ display:inline-flex; align-items:center; gap:10px; }
+.foot-ct svg{ color:var(--accent-bright); flex-shrink:0; }
+.foot-bottom{ display:flex; justify-content:center; text-align:center; margin-top:46px; padding-top:22px; border-top:1px solid rgba(255,255,255,.1); }
+.foot-note{ color:#7d776a; font-size:.8rem; margin:0; max-width:80ch; }
+.foot-top{ display:inline-flex; align-items:center; gap:7px; color:#b6b0a2; font-size:.85rem; white-space:nowrap; transition:.2s; }
+.foot-top:hover{ color:var(--accent-bright); }
+
+/* whatsapp float */
+.wa-float{ position:fixed; inset-block-end:22px; inset-inline-end:22px; z-index:70; width:58px; height:58px; border-radius:50%; display:grid; place-items:center; background:#25D366; color:#fff; box-shadow:0 12px 30px -8px rgba(37,211,102,.55); transition:.25s; }
+.wa-float:hover{ transform:scale(1.09); }
+.wa-float::before{ content:""; position:absolute; inset:0; border-radius:50%; background:#25D366; z-index:-1; animation:wap 2.4s ease-out infinite; }
+@keyframes wap{ 0%{transform:scale(1);opacity:.5} 100%{transform:scale(1.9);opacity:0} }
+
+/* reveals */
+@keyframes nfyRise{ from{opacity:0;transform:translateY(36px)} to{opacity:1;transform:none} }
+@keyframes nfyPop{ from{opacity:0;transform:translateY(30px) scale(.95)} to{opacity:1;transform:none} }
+@keyframes nfyClip{ from{opacity:.3;clip-path:inset(0 0 100% 0)} to{opacity:1;clip-path:inset(0 0 0 0)} }
+@keyframes nfyDraw{ from{stroke-dashoffset:240} to{stroke-dashoffset:0} }
+html.m-ready .reveal{ opacity:0; }
+html.m-ready .reveal.in{ animation:nfyRise .8s cubic-bezier(.33,1,.68,1) both; }
+html.m-ready .who-grid .who{ opacity:0; }
+html.m-ready .who-grid .who.in{ animation:nfyPop .85s cubic-bezier(.33,1,.68,1) calc(var(--i,0)*110ms) both; }
+/* services — drone "capture": rack-focus + focus-frame lock + scan sweep */
+@keyframes nfyCapture{ 0%{ opacity:0; transform:translateY(16px) scale(.985); filter:blur(7px);} 55%{ opacity:1; filter:blur(0);} 100%{ opacity:1; transform:none; filter:blur(0);} }
+@keyframes nfyFocus{ 0%{ opacity:0; transform:scale(1.16);} 42%{ opacity:1;} 68%{ opacity:1; transform:scale(1);} 100%{ opacity:0; transform:scale(1);} }
+@keyframes nfyScan{ 0%{ opacity:0; transform:translateY(0);} 18%{ opacity:1;} 82%{ opacity:1;} 100%{ opacity:0; transform:translateY(360%);} }
+html.m-ready .svc-grid .card{ --b:var(--accent-bright); opacity:0; }
+html.m-ready .svc-grid .card.in{ animation:nfyCapture .75s cubic-bezier(.33,1,.68,1) calc(var(--i,0)*100ms) both; }
+html.m-ready .svc-grid .card::before{ content:""; position:absolute; inset:12px; pointer-events:none; z-index:3; opacity:0;
+  background:
+   linear-gradient(var(--b),var(--b)) left top/15px 2px no-repeat, linear-gradient(var(--b),var(--b)) left top/2px 15px no-repeat,
+   linear-gradient(var(--b),var(--b)) right top/15px 2px no-repeat, linear-gradient(var(--b),var(--b)) right top/2px 15px no-repeat,
+   linear-gradient(var(--b),var(--b)) left bottom/15px 2px no-repeat, linear-gradient(var(--b),var(--b)) left bottom/2px 15px no-repeat,
+   linear-gradient(var(--b),var(--b)) right bottom/15px 2px no-repeat, linear-gradient(var(--b),var(--b)) right bottom/2px 15px no-repeat; }
+html.m-ready .svc-grid .card::after{ content:""; position:absolute; left:0; right:0; top:-42%; height:40%; z-index:2; pointer-events:none; opacity:0;
+  background:linear-gradient(180deg,transparent,color-mix(in srgb,var(--accent-bright) 24%,transparent),transparent); }
+html.m-ready .svc-grid .card.in::before{ animation:nfyFocus .8s ease both; animation-delay:calc(var(--i,0)*100ms); }
+html.m-ready .svc-grid .card.in::after{ animation:nfyScan .95s ease both; animation-delay:calc(var(--i,0)*100ms + 80ms); }
+html.m-ready .clip{ clip-path:inset(0 0 100% 0); }
+html.m-ready .clip.in{ animation:nfyClip .85s cubic-bezier(.4,0,.2,1) both; }
+/* gallery — drone scan-develop reveal (replays) */
+@keyframes nfyWipe{ from{ clip-path:inset(0 0 100% 0);} to{ clip-path:inset(0 0 0 0);} }
+@keyframes nfyDevelop{ 0%{ filter:grayscale(1) brightness(.5) contrast(1.08); transform:scale(1.14);} 100%{ filter:none; transform:scale(1);} }
+@keyframes nfyScanline{ 0%{ top:-7%; opacity:0;} 14%{ opacity:1;} 88%{ opacity:1;} 100%{ top:107%; opacity:0;} }
+html.m-ready .pf-grid .pf{ clip-path:inset(0 0 100% 0); }
+html.m-ready .pf-grid .pf:nth-child(3n+1){ --d:0ms; } html.m-ready .pf-grid .pf:nth-child(3n+2){ --d:130ms; } html.m-ready .pf-grid .pf:nth-child(3n+3){ --d:260ms; }
+html.m-ready .pf-grid .pf.in{ animation:nfyWipe .9s cubic-bezier(.4,0,.2,1) var(--d,0ms) both; }
+html.m-ready .pf-grid .pf.in img{ animation:nfyDevelop 1.2s cubic-bezier(.33,1,.68,1) var(--d,0ms) backwards; }
+html.m-ready .pf-grid .pf::after{ content:""; position:absolute; left:0; right:0; top:-7%; height:5px; z-index:4; pointer-events:none; opacity:0; background:linear-gradient(90deg,transparent,var(--accent-bright),transparent); box-shadow:0 0 16px 3px color-mix(in srgb,var(--accent-bright) 55%,transparent); }
+html.m-ready .pf-grid .pf.in::after{ animation:nfyScanline 1s ease var(--d,0ms) both; }
+.stagger>.reveal.in{ animation-delay:calc(var(--i,0)*100ms); }
+html.m-ready .reveal.in .ic svg>*, html.m-ready .svc-grid .card.in .ic svg>*, html.m-ready .who-grid .who.in .ic svg>*{ stroke-dasharray:240; animation:nfyDraw 1.3s ease forwards; }
+
+@media(max-width:900px){
+  nav.links{ position:fixed; inset-block:72px 0; inset-inline-end:0; width:min(80vw,330px); flex-direction:column; align-items:flex-start; gap:8px; padding:28px; background:var(--panel); border-inline-start:1px solid var(--line-soft); transform:translateX(100%); transition:transform .35s; overflow:auto; }
+  html[dir="rtl"] nav.links{ transform:translateX(-100%); }
+  nav.links.open{ transform:translateX(0); }
+  html[dir="rtl"] nav.links.open{ transform:translateX(0); }
+  nav.links a{ font-size:1.1rem; padding:6px 0; }
+  #burger{ display:flex; margin-inline-start:auto; } .hdr-cta{ display:none; }
+  .hero{ min-height:clamp(540px,82vh,680px); } .hero-copy{ max-width:none; }
+  .tl .steps{ grid-template-columns:1fr; gap:24px; } .tl .step::before{ display:none; }
+  .svc-grid,.who-grid{ grid-template-columns:1fr; }
+  .cap .grid{ grid-template-columns:1fr; gap:30px; }
+  .pf-grid{ grid-template-columns:repeat(2,1fr); }
+  .contact-grid{ grid-template-columns:1fr; } .foot-grid{ grid-template-columns:1fr; gap:20px; } .lead-form .row{ grid-template-columns:1fr; }
+}
+@media(max-width:480px){ .pf-grid{ grid-template-columns:1fr; } }
+</style>
+</head>
+<body>
+
+<header id="hdr"><div class="wrap bar">
+  <a href="#top" class="logo"><span class="tab"></span><span data-en="MASHAAREA" data-ar="مشاريع">مشاريع</span></a>
+  <nav class="links" id="nav">
+    <a href="#services" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+    <a href="#work" data-en="Our Work" data-ar="أعمالنا">أعمالنا</a>
+    <a href="#process" data-en="Process" data-ar="منهجيتنا">منهجيتنا</a>
+    <a href="#serve" data-en="Who We Serve" data-ar="لمن نعمل">لمن نعمل</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+    <a class="btn btn-primary hdr-cta" href="https://wa.me/96590999209?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9" target="_blank" rel="noopener" data-en="Request a Proposal" data-ar="اطلب عرضاً">اطلب عرضاً</a>
+  </nav>
+  <div class="controls">
+    <button class="ctrl" id="langBtn" aria-label="Language">EN</button>
+    <button class="ctrl" id="themeBtn" aria-label="Theme">☾</button>
+    <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div></header>
+
+<a id="top"></a>
+<section class="hero">
+  <div class="hero-bg">
+    <div class="slide on" style="background-image:url('https://images.unsplash.com/photo-1678941347696-7521637e0be8?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1726087162826-e6f42613a89e?auto=format&fit=crop&w=1920&q=80')"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1726087167125-03c390694a03?auto=format&fit=crop&w=1920&q=80')"></div>
+  </div>
+  <div class="drone" aria-hidden="true">
+    <svg viewBox="0 0 260 214" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <polygon class="beam" points="130,150 96,214 164,214" fill="var(--accent-bright)"/>
+      <g stroke="#eef0f0" stroke-width="7" stroke-linecap="round">
+        <line x1="130" y1="112" x2="58" y2="76"/>
+        <line x1="130" y1="112" x2="202" y2="76"/>
+        <line x1="130" y1="112" x2="74" y2="150"/>
+        <line x1="130" y1="112" x2="186" y2="150"/>
+      </g>
+      <g transform="translate(58,76)"><ellipse class="disc" rx="26" ry="8"/><ellipse class="rotor r1" rx="25" ry="3.2"/><circle class="hub" r="6"/></g>
+      <g transform="translate(202,76)"><ellipse class="disc" rx="26" ry="8"/><ellipse class="rotor r2" rx="25" ry="3.2"/><circle class="hub" r="6"/></g>
+      <g transform="translate(74,150)"><ellipse class="disc" rx="24" ry="7"/><ellipse class="rotor r3" rx="23" ry="3"/><circle class="hub" r="5.5"/></g>
+      <g transform="translate(186,150)"><ellipse class="disc" rx="24" ry="7"/><ellipse class="rotor r4" rx="23" ry="3"/><circle class="hub" r="5.5"/></g>
+      <rect x="92" y="96" width="76" height="30" rx="13" fill="#f7f8f8"/>
+      <rect x="92" y="96" width="76" height="13" rx="13" fill="#ffffff"/>
+      <rect x="104" y="108" width="52" height="5" rx="2.5" fill="var(--accent-bright)"/>
+      <path d="M108 126 l-6 12 M152 126 l6 12" stroke="#d8dadb" stroke-width="4" stroke-linecap="round"/>
+      <circle cx="130" cy="140" r="11" fill="#26261f"/>
+      <circle class="lens" cx="130" cy="140" r="4.6" fill="var(--accent-bright)"/>
+    </svg>
+  </div>
+  <div class="wrap hero-inner"><div class="hero-copy">
+    <span class="eyebrow reveal" data-en="Aerial Documentation for Mega Projects" data-ar="توثيق جوي للمشاريع الكبرى">توثيق جوي للمشاريع الكبرى</span>
+    <h1 class="reveal" data-en="From First Excavation <span class='y'>to Handover.</span>" data-ar="من أول الحفر <span class='y'>إلى التسليم.</span>">من أول الحفر <span class="y">إلى التسليم.</span></h1>
+    <p class="reveal" data-en="We document Kuwait&#39;s biggest projects from the sky — every stage, captured with cinematic precision." data-ar="نوثّق أكبر مشاريع الكويت من الجو — كل مرحلة، نلتقطها بدقة سينمائية.">نوثّق أكبر مشاريع الكويت من الجو — كل مرحلة، نلتقطها بدقة سينمائية.</p>
+    <div class="cta-row reveal">
+      <a class="btn btn-primary" href="https://wa.me/96590999209?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9" target="_blank" rel="noopener" data-en="Request a Documentation Proposal" data-ar="اطلب عرض توثيق">اطلب عرض توثيق</a>
+      <a class="btn btn-ghost" href="#work" data-en="See Our Work" data-ar="شاهد أعمالنا">شاهد أعمالنا</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="tl section" id="process"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Our Process" data-ar="منهجيتنا">منهجيتنا</span>
+  <h2 class="h-sec reveal" data-en="From excavation to <span class='mark'>handover</span>." data-ar="من الحفر إلى <span class='mark'>التسليم</span>.">من الحفر إلى <span class="mark">التسليم</span>.</h2>
+  <div class="steps">
+    <div class="tl-drone" aria-hidden="true">
+      <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <polygon class="beam" points="60,58 46,116 74,116"/>
+        <g class="arms" stroke="var(--txt)" stroke-width="5" stroke-linecap="round">
+          <line x1="60" y1="46" x2="28" y2="28"/><line x1="60" y1="46" x2="92" y2="28"/>
+          <line x1="60" y1="46" x2="34" y2="60"/><line x1="60" y1="46" x2="86" y2="60"/>
+        </g>
+        <g transform="translate(28,28)"><ellipse class="disc" rx="16" ry="5"/><ellipse class="rotor r1" rx="15" ry="2.4"/><circle class="hub" r="4"/></g>
+        <g transform="translate(92,28)"><ellipse class="disc" rx="16" ry="5"/><ellipse class="rotor r2" rx="15" ry="2.4"/><circle class="hub" r="4"/></g>
+        <g transform="translate(34,60)"><ellipse class="disc" rx="14" ry="4.5"/><ellipse class="rotor r3" rx="13" ry="2.2"/><circle class="hub" r="3.6"/></g>
+        <g transform="translate(86,60)"><ellipse class="disc" rx="14" ry="4.5"/><ellipse class="rotor r4" rx="13" ry="2.2"/><circle class="hub" r="3.6"/></g>
+        <rect class="body" x="38" y="36" width="44" height="20" rx="9"/>
+        <rect class="body2" x="38" y="36" width="44" height="9" rx="9"/>
+        <circle class="gimbal" cx="60" cy="58" r="7.5"/>
+        <circle class="lens" cx="60" cy="58" r="3.2"/>
+      </svg>
+    </div>
+    <div class="step" style="--si:0"><div class="num" data-num="1">1</div><h4 data-en="Excavation" data-ar="الحفر">الحفر</h4><p data-en="Day one, from above" data-ar="اليوم الأول، من الأعلى">اليوم الأول، من الأعلى</p></div>
+    <div class="step" style="--si:1"><div class="num" data-num="2">2</div><h4 data-en="Foundation" data-ar="الأساسات">الأساسات</h4><p data-en="Every pour on record" data-ar="كل صبّة موثّقة">كل صبّة موثّقة</p></div>
+    <div class="step" style="--si:2"><div class="num" data-num="3">3</div><h4 data-en="Structure" data-ar="الهيكل">الهيكل</h4><p data-en="Rising, frame by frame" data-ar="يرتفع، إطاراً بإطار">يرتفع، إطاراً بإطار</p></div>
+    <div class="step" style="--si:3"><div class="num" data-num="4">4</div><h4 data-en="Progress" data-ar="التقدّم">التقدّم</h4><p data-en="Tracked, reported, archived" data-ar="متابعة وتقارير وأرشفة">متابعة وتقارير وأرشفة</p></div>
+    <div class="step" style="--si:4"><div class="num" data-num="5">5</div><h4 data-en="Handover" data-ar="التسليم">التسليم</h4><p data-en="The full story, delivered" data-ar="القصة كاملة، مُسلّمة">القصة كاملة، مُسلّمة</p></div>
+  </div>
+</div></section>
+
+<section class="section" id="services"><div class="wrap">
+  <span class="eyebrow reveal" data-en="What We Do" data-ar="ماذا نقدّم">ماذا نقدّم</span>
+  <h2 class="h-sec reveal" data-en="Every angle of your <span class='mark'>build</span>." data-ar="مشروعك من كل <span class='mark'>زاوية</span>.">مشروعك من كل <span class="mark">زاوية</span>.</h2>
+  <div class="svc-grid stagger">
+    <div class="card" style="--i:0"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M5 8L2 5M19 8l3-3M5 16l-3 3M19 16l3 3M8 5H5v3M16 5h3v3M8 19H5v-3M16 19h3v-3"/></svg></div><h3 data-en="Aerial Drone Photography &amp; Video" data-ar="تصوير جوي بالدرون">تصوير جوي بالدرون</h3><p data-en="Cinematic stills and 4K aerial footage of your site, captured from every angle." data-ar="صور ثابتة ولقطات جوية بدقة 4K لموقعك، من كل زاوية.">صور ثابتة ولقطات جوية بدقة 4K لموقعك، من كل زاوية.</p></div>
+    <div class="card" style="--i:1"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7h4l2-2h6l2 2h4v12H3z"/><circle cx="12" cy="13" r="3.5"/></svg></div><h3 data-en="Construction Progress Documentation" data-ar="توثيق تقدّم الإنشاء">توثيق تقدّم الإنشاء</h3><p data-en="A complete visual record of your build, stage by stage, from groundbreaking to handover." data-ar="سجلّ بصري كامل لمشروعك، مرحلة بمرحلة، من الحفر حتى التسليم.">سجلّ بصري كامل لمشروعك، مرحلة بمرحلة، من الحفر حتى التسليم.</p></div>
+    <div class="card" style="--i:2"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div><h3 data-en="Time-lapse &amp; Hyperlapse" data-ar="تايم لابس وهايبر لابس">تايم لابس وهايبر لابس</h3><p data-en="Months of construction compressed into seconds — your whole project moving before your eyes." data-ar="شهور من البناء في ثوانٍ — مشروعك كاملاً يتحرّك أمام عينيك.">شهور من البناء في ثوانٍ — مشروعك كاملاً يتحرّك أمام عينيك.</p></div>
+    <div class="card" style="--i:0"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div><h3 data-en="Progress Reports &amp; Galleries" data-ar="تقارير ومعارض التقدّم">تقارير ومعارض التقدّم</h3><p data-en="Organized, dated visual reports and galleries your team and owners can rely on." data-ar="تقارير ومعارض بصرية منظّمة ومؤرّخة، يعتمد عليها فريقك وأصحاب المشروع.">تقارير ومعارض بصرية منظّمة ومؤرّخة، يعتمد عليها فريقك وأصحاب المشروع.</p></div>
+    <div class="card" style="--i:1"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></div><h3 data-en="360° Site Walkthroughs" data-ar="جولات موقعية 360°">جولات موقعية 360°</h3><p data-en="Immersive 360° captures that let stakeholders walk the site from anywhere." data-ar="لقطات غامرة بزاوية 360° تتيح لأصحاب القرار جولة في الموقع من أي مكان.">لقطات غامرة بزاوية 360° تتيح لأصحاب القرار جولة في الموقع من أي مكان.</p></div>
+    <div class="card" style="--i:2"><div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg></div><h3 data-en="Aerial Inspection" data-ar="فحص جوي">فحص جوي</h3><p data-en="High-resolution aerial inspection of structures and sites across mega and giga projects." data-ar="فحص جوي عالي الدقة للمنشآت والمواقع في المشاريع الكبرى والعملاقة.">فحص جوي عالي الدقة للمنشآت والمواقع في المشاريع الكبرى والعملاقة.</p></div>
+  </div>
+</div></section>
+
+<section class="cap section"><div class="wrap">
+  <div class="grid">
+    <div class="stat reveal"><div class="n"><bdi dir="ltr" data-num="50">50</bdi></div><div class="l" data-en="Camera Drones" data-ar="درون تصوير">درون تصوير</div></div>
+    <div class="stat reveal"><div class="n"><bdi dir="ltr" data-num="15">15</bdi></div><div class="l" data-en="Specialists" data-ar="مختصاً">مختصاً</div></div>
+    <div class="stat reveal"><div class="n"><bdi dir="ltr" data-num="10">10</bdi></div><div class="l" data-en="Field Vehicles" data-ar="مركبات ميدانية">مركبات ميدانية</div></div>
+  </div>
+  <p class="line reveal" data-en="A fleet built to cover Kuwait&#39;s largest sites — on the ground and in the air." data-ar="أسطول مُجهّز لتغطية أكبر مواقع الكويت — في الميدان وفي الجو.">أسطول مُجهّز لتغطية أكبر مواقع الكويت — في الميدان وفي الجو.</p>
+</div></section>
+
+<section class="section" id="work" style="background:var(--ink-2)"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Built for Mega-Projects" data-ar="مهيّأون للمشاريع الكبرى">مهيّأون للمشاريع الكبرى</span>
+  <h2 class="h-sec reveal" data-en="Among Kuwait&#39;s <span class='mark'>largest</span> projects." data-ar="من <span class='mark'>أكبر</span> مشاريع الكويت.">من <span class="mark">أكبر</span> مشاريع الكويت.</h2>
+  <p class="lead reveal" data-en="The kind of landmark Kuwait projects our drone teams are built to document — excavation to handover." data-ar="نوع المشاريع الكبرى في الكويت التي صُمِّمت فرقنا لتوثيقها — من الحفر إلى التسليم.">نوع المشاريع الكبرى في الكويت التي صُمِّمت فرقنا لتوثيقها — من الحفر إلى التسليم.</p>
+  <div class="pf-grid">
+    <div class="pf"><img loading="lazy" src="https://images.unsplash.com/photo-1541888698598-4096432cd70e?auto=format&fit=crop&w=800&q=80" alt=""><div class="cap2"><small data-en="Infrastructure" data-ar="بنية تحتية">بنية تحتية</small><b data-en="Jamal Abdul Nasser Street" data-ar="شارع جمال عبد الناصر">شارع جمال عبد الناصر</b></div></div>
+    <div class="pf"><img loading="lazy" src="https://images.unsplash.com/photo-1723369962534-34866660b716?auto=format&fit=crop&w=800&q=80" alt=""><div class="cap2"><small data-en="Highway" data-ar="طريق">طريق</small><b data-en="Jahra Road" data-ar="طريق الجهراء">طريق الجهراء</b></div></div>
+    <div class="pf"><img loading="lazy" src="https://images.unsplash.com/photo-1726087167125-03c390694a03?auto=format&fit=crop&w=800&q=80" alt=""><div class="cap2"><small data-en="Urban" data-ar="حضري">حضري</small><b data-en="Boulevard Park" data-ar="بوليفارد بارك">بوليفارد بارك</b></div></div>
+    <div class="pf"><img loading="lazy" src="https://images.unsplash.com/photo-1615911007280-d671fa8853eb?auto=format&fit=crop&w=800&q=80" alt=""><div class="cap2"><small data-en="Development" data-ar="تطوير">تطوير</small><b data-en="Bayan" data-ar="بيان">بيان</b></div></div>
+    <div class="pf"><img loading="lazy" src="https://images.unsplash.com/photo-1531431057391-da7a1aabd412?auto=format&fit=crop&w=800&q=80" alt=""><div class="cap2"><small data-en="Infrastructure" data-ar="بنية تحتية">بنية تحتية</small><b data-en="SSUC" data-ar="SSUC">SSUC</b></div></div>
+    <div class="pf" style="display:grid;place-items:center;background:var(--panel);border:1px dashed var(--line)"><div style="text-align:center;padding:20px"><div style="font-family:var(--serif);font-weight:900;font-size:2rem;color:var(--accent-deep)">+</div><b data-en="Your project here" data-ar="مشروعك هنا">مشروعك هنا</b></div></div>
+  </div>
+</div></section>
+
+<section class="section" id="serve"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Who We Serve" data-ar="لمن نعمل">لمن نعمل</span>
+  <h2 class="h-sec reveal" data-en="For the people who <span class='mark'>build</span> Kuwait." data-ar="لمن <span class='mark'>يبنون</span> الكويت.">لمن <span class="mark">يبنون</span> الكويت.</h2>
+  <div class="who-grid stagger">
+    <div class="who" style="--i:0;--pd:0ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M6 21V4h9v17"/><path d="M15 21V9h3v12"/><path d="M9 8h.01M12 8h.01M9 12h.01M12 12h.01M9 16h.01M12 16h.01"/></svg></div><h3 data-en="Developers" data-ar="المطوّرون">المطوّرون</h3><p data-en="Show investors and buyers real, dated progress they can trust." data-ar="اعرض على المستثمرين والمشترين تقدّماً حقيقياً مؤرّخاً يثقون به.">اعرض على المستثمرين والمشترين تقدّماً حقيقياً مؤرّخاً يثقون به.</p></div>
+    <div class="who" style="--i:1;--pd:650ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18h18"/><path d="M5 18a7 7 0 0114 0"/><path d="M10 8.6V6a2 2 0 014 0v2.6"/><path d="M8.5 11.4h7"/></svg></div><h3 data-en="Main Contractors" data-ar="المقاولون الرئيسيون">المقاولون الرئيسيون</h3><p data-en="A verified visual record for milestones, claims, and reporting." data-ar="سجلّ بصري موثّق للمراحل والمطالبات والتقارير.">سجلّ بصري موثّق للمراحل والمطالبات والتقارير.</p></div>
+    <div class="who" style="--i:2;--pd:1300ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10M9.5 21V10M14.5 21V10M19 21V10"/><path d="M4 10h16"/><path d="M12 3L4 9h16z"/></svg></div><h3 data-en="Government &amp; PPP Owners" data-ar="جهات حكومية وشراكات بين القطاعين">جهات حكومية وشراكات بين القطاعين</h3><p data-en="Transparent, official documentation across every project phase." data-ar="توثيق رسمي وشفّاف عبر كل مرحلة من المشروع.">توثيق رسمي وشفّاف عبر كل مرحلة من المشروع.</p></div>
+  </div>
+  <div class="chips reveal">
+    <div class="c"><span class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M6 21V8l5-3v16M11 21V11l5 3v7"/></svg></span><span data-en="Mega-Project Experience" data-ar="خبرة في المشاريع الكبرى">خبرة في المشاريع الكبرى</span></div>
+    <div class="c"><span class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></svg></span><span data-en="Excavation to Handover" data-ar="من الحفر إلى التسليم">من الحفر إلى التسليم</span></div>
+    <div class="c"><span class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6 7-11a7 7 0 10-14 0c0 5 7 11 7 11z"/><circle cx="12" cy="10" r="2.4"/></svg></span><span data-en="Kuwait-Wide Coverage" data-ar="تغطية على مستوى الكويت">تغطية على مستوى الكويت</span></div>
+    <div class="c"><span class="ci"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18M7 6v12M17 6v12"/></svg></span><span data-en="Cinematic + Accurate" data-ar="دقّة بلمسة سينمائية">دقّة بلمسة سينمائية</span></div>
+  </div>
+</div></section>
+
+<section class="section" id="contact" style="background:var(--ink-2)"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Start Your Project" data-ar="ابدأ مشروعك">ابدأ مشروعك</span>
+  <h2 class="h-sec reveal" data-en="Let&#39;s <span class='mark'>document</span> your build." data-ar="لنوثّق <span class='mark'>مشروعك</span>.">لنوثّق <span class="mark">مشروعك</span>.</h2>
+  <p class="lead reveal" data-en="Tell us about your project and we&#39;ll put together a documentation proposal." data-ar="أخبرنا عن مشروعك وسنُعدّ لك عرض توثيق مخصّصاً.">أخبرنا عن مشروعك وسنُعدّ لك عرض توثيق مخصّصاً.</p>
+  <div class="contact-grid">
+    <form class="lead-form reveal" onsubmit="return waSubmit(event)">
+      <div class="row">
+        <div class="fld"><label data-en="Name" data-ar="الاسم">الاسم</label><input id="f-name" required data-en-ph="Your name" data-ar-ph="اسمك" placeholder="اسمك"></div>
+        <div class="fld"><label data-en="Company" data-ar="الشركة">الشركة</label><input id="f-co" data-en-ph="Company name" data-ar-ph="اسم الشركة" placeholder="اسم الشركة"></div>
+      </div>
+      <div class="row">
+        <div class="fld"><label data-en="Phone" data-ar="رقم الهاتف">رقم الهاتف</label><input id="f-phone" type="tel" data-en-ph="Your phone number" data-ar-ph="أدخل رقم هاتفك" placeholder="أدخل رقم هاتفك"></div>
+        <div class="fld"><label data-en="Email (optional)" data-ar="البريد الإلكتروني (اختياري)">البريد الإلكتروني (اختياري)</label><input id="f-email" type="email" data-en-ph="you@email.com" data-ar-ph="you@email.com" placeholder="you@email.com"></div>
+      </div>
+      <div class="fld"><label data-en="What do you need?" data-ar="ما الذي تحتاجه؟">ما الذي تحتاجه؟</label>
+        <select id="f-intent">
+          <option value="" data-en="Choose a service" data-ar="اختر الخدمة">اختر الخدمة</option>
+          <option data-en="Project documentation" data-ar="توثيق مشروع">توثيق مشروع</option>
+          <option data-en="Aerial photography / video" data-ar="تصوير جوي">تصوير جوي</option>
+          <option data-en="Time-lapse" data-ar="تايم لابس">تايم لابس</option>
+          <option data-en="360° walkthrough" data-ar="جولة 360°">جولة 360°</option>
+          <option data-en="Inspection" data-ar="فحص جوي">فحص جوي</option>
+        </select>
+      </div>
+      <div class="fld"><label data-en="Message" data-ar="الرسالة">الرسالة</label><textarea id="f-msg" data-en-ph="Tell us about your project…" data-ar-ph="أخبرنا عن مشروعك…" placeholder="أخبرنا عن مشروعك…"></textarea></div>
+      <button type="submit" class="btn btn-primary" data-en="Send Request" data-ar="أرسل الطلب">أرسل الطلب</button>
+    </form>
+    <div class="reveal">
+      <div class="info-line"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2z"/></svg></div><div><b><bdi dir="ltr">+965 9099 9209</bdi></b><span data-en="WhatsApp" data-ar="واتساب">واتساب</span></div></div>
+      <div class="info-line"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b data-en="Kuwait City — Headquarters" data-ar="مدينة الكويت — المقر الرئيسي">مدينة الكويت — المقر الرئيسي</b><span data-en="Al Asimah, Kuwait" data-ar="العاصمة، الكويت">العاصمة، الكويت</span></div></div>
+      <a class="info-line" href="mailto:info@mashaarea.com"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><b><bdi dir="ltr">info@mashaarea.com</bdi></b><span data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</span></div></a>
+      <a class="info-line" href="https://www.linkedin.com/company/mashaarea" target="_blank" rel="noopener"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.5 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.21V21H9z"/></svg></div><div><b data-en="Mashaarea Aerial Documentation" data-ar="مشاريع للتوثيق الجوي">مشاريع للتوثيق الجوي</b><span data-en="LinkedIn" data-ar="لينكدإن">لينكدإن</span></div></a>
+      <a class="info-line" href="https://instagram.com/mashaarea" target="_blank" rel="noopener"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg></div><div><b><bdi dir="ltr">@mashaarea</bdi></b><span data-en="Instagram" data-ar="إنستغرام">إنستغرام</span></div></a>
+      <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Kuwait%20City&z=11&output=embed"></iframe>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <a href="#top" class="logo"><span class="tab"></span><span data-en="MASHAAREA" data-ar="مشاريع">مشاريع</span></a>
+      <p class="foot-tag" data-en="Mashaarea — aerial documentation of Kuwait&#39;s mega projects, from first excavation to handover." data-ar="مشاريع — توثيق جوي لمشاريع الكويت الكبرى، من أول الحفر إلى التسليم.">مشاريع — توثيق جوي لمشاريع الكويت الكبرى، من أول الحفر إلى التسليم.</p>
+      <div class="foot-social">
+        <a class="foot-soc" href="https://www.linkedin.com/company/mashaarea" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 11-.02 5 2.5 2.5 0 01.02-5zM3 9h4v12H3zM9 9h3.8v1.7h.05c.53-1 1.83-2.05 3.76-2.05C20.5 8.65 21 11 21 14.1V21h-4v-6.1c0-1.45-.03-3.32-2.02-3.32-2.02 0-2.33 1.58-2.33 3.21V21H9z"/></svg></a>
+        <a class="foot-soc" href="https://instagram.com/mashaarea" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="foot-soc" href="https://wa.me/96590999209" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20z"/></svg></a>
+        <a class="foot-soc" href="mailto:info@mashaarea.com" aria-label="Email"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4 data-en="Explore" data-ar="تصفّح">تصفّح</h4>
+      <a href="#services" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+      <a href="#work" data-en="Our Work" data-ar="أعمالنا">أعمالنا</a>
+      <a href="#process" data-en="Process" data-ar="منهجيتنا">منهجيتنا</a>
+      <a href="#serve" data-en="Who We Serve" data-ar="لمن نعمل">لمن نعمل</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+    </div>
+    <div>
+      <h4 data-en="Get in Touch" data-ar="للتواصل">للتواصل</h4>
+      <a class="foot-ct" href="https://wa.me/96590999209" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2z"/></svg><bdi dir="ltr">+965 9099 9209</bdi></a>
+      <a class="foot-ct" href="mailto:info@mashaarea.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><bdi dir="ltr">info@mashaarea.com</bdi></a>
+      <a class="foot-ct" href="#contact"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-en="Kuwait City, Kuwait" data-ar="مدينة الكويت، الكويت">مدينة الكويت، الكويت</span></a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p class="foot-note" data-en="© Mashaarea. Demonstration site by Netofy — project references are illustrative and contact details should be confirmed before use." data-ar="© مشاريع. موقع تجريبي من إعداد Netofy — المشاريع المذكورة للعرض التوضيحي، ويُرجى تأكيد بيانات التواصل قبل الاعتماد.">© مشاريع. موقع تجريبي من إعداد Netofy — المشاريع المذكورة للعرض التوضيحي، ويُرجى تأكيد بيانات التواصل قبل الاعتماد.</p>
+  </div>
+</div></footer>
+
+<a class="wa-float" href="https://wa.me/96590999209?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D9%85%D8%B4%D8%A7%D8%B1%D9%8A%D8%B9" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.5-5.9c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script>
+const NS="msha:", root=document.documentElement;
+function setTheme(t){ root.setAttribute('data-theme',t); localStorage.setItem(NS+'theme',t); document.getElementById('themeBtn').textContent=t==='dark'?'☀':'☾'; }
+function toArNum(s){ return String(s).replace(/[0-9]/g,d=>'٠١٢٣٤٥٦٧٨٩'[d]); }
+function applyLang(l){
+  root.setAttribute('lang',l); root.setAttribute('dir', l==='ar'?'rtl':'ltr'); localStorage.setItem(NS+'lang',l);
+  document.getElementById('langBtn').textContent = l==='ar'?'EN':'ع';
+  document.querySelectorAll('[data-en]').forEach(el=>{ const v=l==='ar'?el.dataset.ar:el.dataset.en; if(v!=null) el.innerHTML=v; });
+  document.querySelectorAll('[data-en-ph]').forEach(el=>{ el.placeholder = l==='ar'?el.dataset.arPh:el.dataset.enPh; });
+  document.querySelectorAll('[data-num]').forEach(el=>{ el.textContent = l==='ar'?toArNum(el.dataset.num):el.dataset.num; });
+  if(window.__tlPark) setTimeout(window.__tlPark,80);
+}
+applyLang(localStorage.getItem(NS+'lang')||'ar');
+setTheme(localStorage.getItem(NS+'theme')||'light');
+document.getElementById('langBtn').onclick=()=>applyLang(root.getAttribute('lang')==='ar'?'en':'ar');
+document.getElementById('themeBtn').onclick=()=>setTheme(root.getAttribute('data-theme')==='dark'?'light':'dark');
+
+const nav=document.getElementById('nav');
+document.getElementById('burger').onclick=()=>nav.classList.toggle('open');
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+
+const slides=[...document.querySelectorAll('.hero-bg .slide')]; let si=0;
+if(slides.length>1) setInterval(()=>{ slides[si].classList.remove('on'); si=(si+1)%slides.length; slides[si].classList.add('on'); },5200);
+
+function waSubmit(e){ e.preventDefault(); const ar=root.getAttribute('lang')==='ar'; const g=id=>document.getElementById(id).value;
+  const t=(ar?`مرحباً مشاريع،\nالاسم: ${g('f-name')}\nالشركة: ${g('f-co')}\nالهاتف: ${g('f-phone')}\nالبريد: ${g('f-email')}\nالطلب: ${g('f-intent')}\nالتفاصيل: ${g('f-msg')}`
+             :`Hello Mashaarea,\nName: ${g('f-name')}\nCompany: ${g('f-co')}\nPhone: ${g('f-phone')}\nEmail: ${g('f-email')}\nNeed: ${g('f-intent')}\nDetails: ${g('f-msg')}`);
+  window.open('https://wa.me/96590999209?text='+encodeURIComponent(t),'_blank'); return false;
+}
+
+/* reveals + settle */
+root.classList.add('m-ready');
+function settle(el){ setTimeout(()=>{ el.style.animation='none'; el.style.opacity='1'; el.style.transform='none'; el.style.clipPath='none'; },1500); }
+function reveal(el){ if(el.classList.contains('in'))return; el.classList.add('in'); settle(el); }
+const reveals=[...document.querySelectorAll('.reveal,.clip')];
+function showInView(){ for(let i=reveals.length-1;i>=0;i--){ if(reveals[i].getBoundingClientRect().top<innerHeight*0.94){ reveal(reveals[i]); reveals.splice(i,1);} } }
+try{ const io=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting){ reveal(e.target); io.unobserve(e.target);} }),{threshold:.1}); reveals.forEach(el=>io.observe(el)); }catch(e){}
+addEventListener('scroll',showInView,{passive:true}); addEventListener('resize',showInView); showInView(); setTimeout(showInView,500);
+
+/* services capture — REPLAYS every time the grid re-enters view */
+const svcGrid=document.querySelector('.svc-grid');
+if(svcGrid){ const cards=[...svcGrid.querySelectorAll('.card')]; let vis=false;
+  const fire=()=>cards.forEach(c=>{ c.classList.remove('in'); void c.offsetWidth; c.classList.add('in'); });
+  const hide=()=>cards.forEach(c=>c.classList.remove('in'));
+  try{ new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting&&!vis){ vis=true; fire(); } else if(!e.isIntersecting&&vis){ vis=false; hide(); } }),{threshold:0}).observe(svcGrid); }
+  catch(e){ cards.forEach(c=>c.classList.add('in')); }
+}
+
+/* process timeline — a drone flies the line, REPLAYS every time it re-enters view */
+const stepsEl=document.querySelector('.tl .steps');
+if(stepsEl){ const st=[...stepsEl.querySelectorAll('.step')];
+  const drone=stepsEl.querySelector('.tl-drone');
+  let timers=[], vis=false;
+  const center=(s)=>{ const n=s.querySelector('.num'),r=n.getBoundingClientRect(),pr=stepsEl.getBoundingClientRect(); return {x:r.left-pr.left+r.width/2, y:r.top-pr.top+r.height/2}; };
+  const place=(s,instant)=>{ if(!drone)return; const p=center(s); if(instant){ drone.style.transition='none'; } drone.style.transform='translate('+p.x+'px,'+p.y+'px)'; if(instant){ drone.getBoundingClientRect(); drone.style.transition=''; } };
+  const reset=()=>{ timers.forEach(clearTimeout); timers=[]; st.forEach(s=>s.classList.remove('lit')); if(drone) drone.classList.remove('show'); };
+  const run=()=>{ reset();
+    if(drone){ place(st[0],true); requestAnimationFrame(()=>drone.classList.add('show')); }
+    st.forEach((s,i)=>timers.push(setTimeout(()=>{ s.classList.add('lit'); place(s); }, 260+i*650)));
+  };
+  const inView=()=>{ const r=stepsEl.getBoundingClientRect(); return r.bottom>60 && r.top<innerHeight-60; };
+  const check=()=>{ const now=inView(); if(now&&!vis){ vis=true; run(); } else if(!now&&vis){ vis=false; reset(); } };
+  addEventListener('scroll',check,{passive:true});
+  addEventListener('resize',()=>{ check(); if(window.__tlPark) window.__tlPark(); });
+  try{ new IntersectionObserver(check).observe(stepsEl); }catch(e){}
+  setTimeout(check,400);
+  window.__tlPark=()=>{ if(vis&&drone) place(st[st.length-1],true); };
+}
+
+/* capability band — numbers COUNT UP on entry, replay every time */
+const capGrid=document.querySelector('.cap .grid');
+if(capGrid){ const nums=[...capGrid.querySelectorAll('.n bdi')]; let capVis=false;
+  const fmt=(v)=> root.getAttribute('lang')==='ar' ? toArNum(v) : String(v);
+  const countUp=(el)=>{ const target=+el.dataset.num||0, dur=1300, t0=Date.now();
+    clearInterval(el.__iv); el.textContent=fmt(0);
+    el.__iv=setInterval(()=>{ const p=Math.min(1,(Date.now()-t0)/dur), e=1-Math.pow(1-p,3); el.textContent=fmt(Math.round(e*target)); if(p>=1) clearInterval(el.__iv); }, 33); };
+  const capIn=()=>{ const r=capGrid.getBoundingClientRect(); return r.bottom>60 && r.top<innerHeight-60; };
+  const capCheck=()=>{ const now=capIn(); if(now&&!capVis){ capVis=true; nums.forEach(countUp); } else if(!now&&capVis){ capVis=false; nums.forEach(n=>{ clearInterval(n.__iv); n.textContent=fmt(0); }); } };
+  if(!capIn()) nums.forEach(n=>n.textContent=fmt(0));
+  addEventListener('scroll',capCheck,{passive:true}); addEventListener('resize',capCheck);
+  try{ new IntersectionObserver(capCheck).observe(capGrid); }catch(e){}
+  setTimeout(capCheck,400);
+}
+
+/* gallery — drone scan-develop, replays on each entry */
+const pfGrid=document.querySelector('.pf-grid');
+if(pfGrid){ const pfs=[...pfGrid.querySelectorAll('.pf')]; let pfVis=false;
+  const fire=()=>pfs.forEach(c=>{ c.classList.remove('in'); void c.offsetWidth; c.classList.add('in'); });
+  const hide=()=>pfs.forEach(c=>c.classList.remove('in'));
+  const pfIn=()=>{ const r=pfGrid.getBoundingClientRect(); return r.bottom>60 && r.top<innerHeight-60; };
+  const pfCheck=()=>{ const now=pfIn(); if(now&&!pfVis){ pfVis=true; fire(); } else if(!now&&pfVis){ pfVis=false; hide(); } };
+  addEventListener('scroll',pfCheck,{passive:true}); addEventListener('resize',pfCheck);
+  try{ new IntersectionObserver(pfCheck).observe(pfGrid); }catch(e){ pfs.forEach(c=>c.classList.add('in')); }
+  setTimeout(pfCheck,400);
+}
+
+/* who-we-serve — replays reveal + radar ping on each entry */
+const whoGrid=document.querySelector('.who-grid');
+if(whoGrid){ const whos=[...whoGrid.querySelectorAll('.who')]; let whoVis=false;
+  const fire=()=>whos.forEach(c=>{ c.classList.remove('in'); void c.offsetWidth; c.classList.add('in'); });
+  const hide=()=>whos.forEach(c=>c.classList.remove('in'));
+  const whoIn=()=>{ const r=whoGrid.getBoundingClientRect(); return r.bottom>60 && r.top<innerHeight-60; };
+  const whoCheck=()=>{ const now=whoIn(); if(now&&!whoVis){ whoVis=true; fire(); } else if(!now&&whoVis){ whoVis=false; hide(); } };
+  addEventListener('scroll',whoCheck,{passive:true}); addEventListener('resize',whoCheck);
+  try{ new IntersectionObserver(whoCheck).observe(whoGrid); }catch(e){ whos.forEach(c=>c.classList.add('in')); }
+  setTimeout(whoCheck,400);
+}
+</script>
+</body>
+</html>
