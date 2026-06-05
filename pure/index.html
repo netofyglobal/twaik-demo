@@ -1,0 +1,657 @@
+<!doctype html>
+<html lang="ar" dir="rtl" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>بيور | Pure Dental Center — مركز بيور لطب الأسنان · الكويت</title>
+<meta name="description" content="مركز بيور لطب الأسنان — عناية أسنان راقية للعائلة والابتسامة في قلب مدينة الكويت. تجميل، تقويم سمارتي الشفّاف، عناية الأطفال، وتقسيط ٠٪.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="مركز بيور لطب الأسنان · الكويت — خلّك بيور">
+<meta property="og:description" content="عناية أسنان راقية، تقويم سمارتي الشفّاف، وتقسيط ٠٪ — في قلب مدينة الكويت. احجز عبر واتساب.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1731514709874-30eead90613b?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%23C2A079'/><text x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23FBF8F3' text-anchor='middle' letter-spacing='1'>P</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@400;500;600&family=Tajawal:wght@400;500;700;800&family=El+Messiri:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+*{ box-sizing:border-box; margin:0; padding:0; }
+:root{ --maxw:1200px; --r:18px;
+  --serif:"Cormorant Garamond",Georgia,serif; --sans:"Jost",system-ui,sans-serif;
+  --hl:rgba(196,160,121,.45); }
+html[lang="ar"]{ --serif:"El Messiri","Tajawal",system-ui,sans-serif; --sans:"Tajawal",system-ui,sans-serif; }
+html[data-theme="light"]{
+  --ink:#F7F2EB; --ink-2:#FCF9F4; --panel:#FFFFFF; --panel-2:#F1E8DC;
+  --line:rgba(58,46,33,.14); --line-soft:rgba(58,46,33,.07);
+  --txt:#2B2620; --txt-soft:#6B6053; --txt-mute:#9C8F7E;
+  --accent:#C2A079; --accent-bright:#D4B58E; --accent-deep:#A07A52;
+  --btn-bg:#2B2620; --btn-fg:#FCF9F4;
+  --scrim:linear-gradient(180deg,rgba(30,22,14,.30),rgba(30,22,14,.62) 92%);
+  --shadow:0 30px 64px -38px rgba(80,60,30,.40); }
+html[data-theme="dark"]{
+  --ink:#19150F; --ink-2:#201B14; --panel:#221C15; --panel-2:#2A241B;
+  --line:rgba(212,181,142,.20); --line-soft:rgba(245,238,228,.07);
+  --txt:#F3ECDE; --txt-soft:#C6BBA8; --txt-mute:#8E8472;
+  --accent:#D4B58E; --accent-bright:#E6CDA6; --accent-deep:#C2A079;
+  --btn-bg:#D4B58E; --btn-fg:#19150F;
+  --scrim:linear-gradient(180deg,rgba(8,6,3,.42),rgba(8,6,3,.80) 92%);
+  --shadow:0 30px 64px -34px rgba(0,0,0,.7); }
+html{ scroll-behavior:smooth; overflow-x:clip; }
+body{ background:var(--ink); color:var(--txt); font-family:var(--sans); font-size:17px; line-height:1.7; overflow-x:clip; -webkit-font-smoothing:antialiased; transition:background .4s,color .4s; }
+.wrap{ max-width:var(--maxw); margin-inline:auto; padding-inline:22px; }
+a{ color:inherit; text-decoration:none; }
+section{ padding:clamp(54px,8vw,96px) 0; }
+.eyebrow{ display:inline-block; font-weight:800; letter-spacing:.13em; text-transform:uppercase; font-size:1.05rem; color:var(--accent-deep);
+  position:relative; padding:.16em .62em .24em; }
+.eyebrow::before{ content:""; position:absolute; inset:auto -.18em -.04em -.18em; height:64%; z-index:-1; opacity:.72; transform:rotate(-1.2deg);
+  background:no-repeat center/100% 100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 40' preserveAspectRatio='none'%3E%3Cpath d='M4 21 Q26 7 66 10 T130 8 T196 14 Q193 34 150 35 T66 37 T5 30 Z' fill='%23C4A079'/%3E%3C/svg%3E"); }
+html[lang="ar"] .eyebrow{ font-size:1.34rem; letter-spacing:0; font-weight:700; }
+.h2{ font-family:var(--serif); font-weight:700; font-size:clamp(34px,5.4vw,62px); line-height:1.1; letter-spacing:-.4px; margin:14px 0 16px; }
+html[lang="ar"] .h2{ line-height:1.32; letter-spacing:0; font-weight:600; }
+.h2 .mark{ color:var(--accent); }
+.lead{ color:var(--txt-soft); font-size:1.08rem; max-width:60ch; }
+.btn{ display:inline-flex; align-items:center; gap:9px; border-radius:999px; padding:14px 26px; font-weight:600; font-family:var(--sans); font-size:1rem; cursor:pointer; border:1px solid transparent; transition:.25s; }
+.btn-primary{ background:var(--btn-bg); color:var(--btn-fg); }
+.btn-primary:hover{ transform:translateY(-2px); box-shadow:var(--shadow); }
+.btn-ghost{ background:transparent; border-color:var(--line); color:var(--txt); }
+.btn-ghost:hover{ border-color:var(--accent); }
+
+/* header */
+header{ position:sticky; top:0; z-index:60; background:color-mix(in srgb,var(--ink) 86%,transparent); border-bottom:1px solid var(--line-soft); }
+@media(min-width:921px){ header{ backdrop-filter:blur(12px); } }
+.nav{ display:flex; align-items:center; gap:18px; height:74px; }
+.logo{ display:flex; align-items:center; gap:9px; font-family:var(--serif); font-weight:700; font-size:1.7rem; letter-spacing:.18em; color:var(--txt); }
+html[lang="ar"] .logo{ font-family:var(--serif); letter-spacing:0; font-size:1.7rem; }
+.logo .tab{ width:15px; height:15px; border-radius:50%; border:2.5px solid var(--accent); }
+nav.links{ display:flex; gap:24px; margin-inline-start:auto; align-items:center; }
+nav.links a{ color:var(--txt-soft); font-weight:500; font-size:.95rem; }
+nav.links a:hover{ color:var(--accent-deep); }
+.tools{ display:flex; align-items:center; gap:9px; }
+.icon-btn{ width:42px; height:42px; border-radius:50%; border:1px solid var(--line); background:transparent; color:var(--txt); cursor:pointer; display:grid; place-items:center; font-size:.92rem; font-weight:600; transition:.25s; }
+.icon-btn:hover{ border-color:var(--accent); }
+#burger{ display:none; width:44px; height:44px; border-radius:12px; border:1px solid var(--line); background:transparent; cursor:pointer; flex-direction:column; gap:5px; align-items:center; justify-content:center; }
+#burger span{ width:20px; height:2px; background:var(--txt); border-radius:2px; }
+
+/* hero */
+.hero{ position:relative; min-height:clamp(560px,90vh,820px); display:flex; align-items:flex-end; overflow:hidden; }
+.hero-bg{ position:absolute; inset:0; overflow:hidden; background:radial-gradient(135% 110% at 26% 14%, #4e3c2a 0%, #2e2317 46%, #160f08 100%); }
+#toothCanvas{ position:absolute; inset:0; width:100%; height:100%; z-index:1; display:block; pointer-events:none; }
+.hero-bg::after{ content:""; position:absolute; inset:0; z-index:2; pointer-events:none; background:linear-gradient(to top, rgba(15,10,5,.62) 0%, rgba(15,10,5,.14) 44%, transparent 74%); }
+@media(max-width:760px){ .hero-bg::after{ background:linear-gradient(to top, rgba(15,10,5,.78) 0%, rgba(15,10,5,.5) 55%, rgba(15,10,5,.4) 100%); } }
+.hero-inner{ position:relative; z-index:2; width:100%; padding-bottom:clamp(46px,8vh,88px); color:#fff; }
+.hero .eyebrow{ color:#fff; }
+.hero .eyebrow::before{ opacity:.85; }
+.hero h1{ font-family:var(--serif); font-weight:700; font-size:clamp(40px,7vw,84px); line-height:1.05; letter-spacing:-.5px; margin:14px 0 18px; max-width:18ch; text-shadow:0 2px 34px rgba(0,0,0,.45); }
+html[lang="ar"] .hero h1{ line-height:1.28; font-weight:600; letter-spacing:0; }
+.hero h1 .y{ color:var(--accent-bright); }
+.hero p{ font-size:clamp(1.05rem,1.6vw,1.28rem); color:rgba(255,255,255,.92); max-width:48ch; margin-bottom:26px; }
+.hero-cta{ display:flex; gap:13px; flex-wrap:wrap; }
+.hero .btn-ghost{ color:#fff; border-color:rgba(255,255,255,.5); }
+.hero-chips{ display:flex; gap:12px; flex-wrap:wrap; margin-top:30px; }
+.hero-chips .chip{ display:inline-flex; align-items:center; gap:10px; background:rgba(255,255,255,.13); border:1px solid rgba(255,255,255,.3); border-radius:999px; padding:11px 20px; font-size:1.02rem; font-weight:600; color:#fff; }
+@media(min-width:921px){ .hero-chips .chip{ backdrop-filter:blur(6px); } }
+html[lang="ar"] .hero-chips .chip{ font-size:1.1rem; }
+.hero-chips .chip svg{ color:var(--accent-bright); width:20px; height:20px; flex-shrink:0; }
+/* sparkle motif */
+.aligner-hero{ position:absolute; z-index:2; bottom:14%; inset-inline-end:5%; width:clamp(160px,19vw,255px); pointer-events:none; filter:drop-shadow(0 22px 36px rgba(45,28,12,.5)); }
+.aligner-hero svg{ width:100%; height:auto; overflow:visible; display:block; }
+.aligner-hero .aligner{ transform-box:fill-box; transform-origin:center; animation:algSnap 4.6s cubic-bezier(.4,1.5,.4,1) infinite; }
+@keyframes algSnap{ 0%{ transform:translateY(-30px); opacity:0; } 12%{ opacity:1; } 22%{ transform:translateY(0); opacity:1; } 80%{ transform:translateY(0); opacity:1; } 91%{ transform:translateY(-15px); opacity:0; } 100%{ transform:translateY(-30px); opacity:0; } }
+.aligner-hero .glow{ animation:algGlow 4.6s ease-in-out infinite; }
+@keyframes algGlow{ 0%,21%{ opacity:0; } 32%{ opacity:.95; } 58%{ opacity:0; } 100%{ opacity:0; } }
+.aligner-hero .spark{ transform-box:fill-box; transform-origin:center; animation:algSpark 4.6s ease-in-out infinite; }
+@keyframes algSpark{ 0%,20%{ transform:scale(0); opacity:0; } 27%{ transform:scale(1.25); opacity:1; } 42%,100%{ transform:scale(0); opacity:0; } }
+@media(max-width:760px){ .aligner-hero{ width:128px; bottom:9%; inset-inline-end:4%; } }
+
+/* trust strip */
+.trust{ background:var(--panel); border-block:1px solid var(--line-soft); }
+.trust-grid{ display:grid; grid-template-columns:repeat(5,1fr); gap:18px; text-align:center; }
+.trust .t .n{ font-family:var(--serif); font-weight:700; font-size:clamp(1.9rem,3.6vw,2.8rem); color:var(--accent-deep); line-height:1; }
+html[lang="ar"] .trust .t .n{ font-family:var(--serif); }
+.trust .t .l{ color:var(--txt-mute); font-size:.84rem; margin-top:8px; }
+.trust .t .stars{ color:var(--accent); letter-spacing:2px; font-size:1.5rem; }
+
+/* services */
+.svc-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-top:40px; }
+.card{ position:relative; background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:34px 28px; transition:.35s; overflow:hidden; }
+.card:hover{ border-color:var(--accent); transform:translateY(-6px); box-shadow:var(--shadow); }
+.card .ic{ width:60px; height:60px; border-radius:16px; display:grid; place-items:center; border:1px solid color-mix(in srgb,var(--accent) 36%,var(--line)); background:color-mix(in srgb,var(--accent) 11%,transparent); color:var(--accent-deep); margin-bottom:20px; transition:.35s; }
+.card:hover .ic{ background:var(--accent); color:#fff; transform:translateY(-3px); }
+.card h3{ font-family:var(--serif); font-weight:700; font-size:1.5rem; margin-bottom:9px; }
+html[lang="ar"] .card h3{ font-family:var(--serif); font-size:1.45rem; font-weight:600; }
+.card p{ color:var(--txt-soft); font-size:.97rem; }
+.card .tags{ margin-top:16px; display:flex; flex-wrap:wrap; gap:8px; }
+.card .tags span{ font-size:.78rem; color:var(--accent-deep); border:1px solid var(--line); border-radius:999px; padding:5px 13px; }
+
+/* smartee spotlight */
+.smartee{ background:var(--panel-2); }
+.smartee-grid{ display:grid; grid-template-columns:1.05fr .95fr; gap:48px; align-items:center; }
+.aligner-stage{ position:relative; aspect-ratio:1/.82; border-radius:var(--r); background:radial-gradient(120% 120% at 70% 20%,color-mix(in srgb,var(--accent) 22%,var(--panel)),var(--panel)); border:1px solid var(--line-soft); display:grid; place-items:center; overflow:hidden; }
+.aligner-stage svg{ width:74%; filter:drop-shadow(0 14px 26px rgba(120,90,50,.22)); }
+.aligner-stage img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block; animation:algZoom 16s ease-in-out infinite alternate; }
+@keyframes algZoom{ from{ transform:scale(1.02); } to{ transform:scale(1.12); } }
+.shine{ position:absolute; inset:0; background:linear-gradient(115deg,transparent 38%,rgba(255,255,255,.55) 50%,transparent 62%); transform:translateX(-100%); }
+html.p-ready .aligner-stage.in .shine{ animation:shine 2.6s ease-in-out 1.2s infinite; }
+@keyframes shine{ 0%{ transform:translateX(-120%);} 55%,100%{ transform:translateX(120%);} }
+/* clear-aligner story: crooked teeth straighten, then the clear tray settles over them */
+@keyframes toothAlign{ 0%,10%{ transform:rotate(var(--r,6deg)) translateY(var(--ty,0)); } 50%,86%{ transform:rotate(0) translateY(0); } 100%{ transform:rotate(var(--r,6deg)) translateY(var(--ty,0)); } }
+.aligner-stage .te{ transform-box:fill-box; transform-origin:bottom center; animation:toothAlign 5s ease-in-out infinite; }
+@keyframes trayShow{ 0%,36%{ opacity:0; } 56%,82%{ opacity:1; } 100%{ opacity:0; } }
+.aligner-stage .tray{ animation:trayShow 5s ease-in-out infinite; }
+.benefits{ list-style:none; margin-top:22px; display:grid; gap:14px; }
+.benefits li{ display:flex; gap:12px; align-items:flex-start; }
+.benefits .bi{ flex-shrink:0; width:30px; height:30px; border-radius:50%; background:color-mix(in srgb,var(--accent) 16%,transparent); color:var(--accent-deep); display:grid; place-items:center; }
+
+/* before/after */
+.ba-wrap{ max-width:880px; margin:36px auto 0; }
+.ba{ position:relative; aspect-ratio:16/10; border-radius:var(--r); overflow:hidden; user-select:none; touch-action:none; box-shadow:var(--shadow); cursor:ew-resize; }
+.ba img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover; pointer-events:none; }
+.ba .after{ filter:saturate(1.05) brightness(1.04); }
+.ba .before{ clip-path:inset(0 0 0 50%); filter:saturate(.55) brightness(.9) sepia(.28) contrast(.96); }
+html[dir="rtl"] .ba .before{ clip-path:inset(0 50% 0 0); }
+.ba .tag{ position:absolute; bottom:14px; padding:6px 13px; border-radius:999px; font-size:.78rem; font-weight:600; background:rgba(20,15,9,.6); color:#fff; backdrop-filter:blur(4px); z-index:3; }
+.ba .tag.t-before{ inset-inline-end:14px; } .ba .tag.t-after{ inset-inline-start:14px; }
+.ba .handle{ position:absolute; top:0; bottom:0; inset-inline-start:50%; width:3px; background:#fff; transform:translateX(-50%); z-index:4; box-shadow:0 0 14px rgba(0,0,0,.4); }
+.ba .knob{ position:absolute; top:50%; inset-inline-start:50%; transform:translate(-50%,-50%); width:46px; height:46px; border-radius:50%; background:#fff; color:var(--accent-deep); display:grid; place-items:center; z-index:5; box-shadow:0 6px 18px rgba(0,0,0,.3); }
+.ba-note{ text-align:center; color:var(--txt-mute); font-size:.82rem; margin-top:14px; }
+
+/* financing */
+.fin{ background:var(--btn-bg); color:#fff; text-align:center; }
+.fin .h2{ color:#fff; } .fin .h2 .mark{ color:var(--accent-bright); }
+.fin p{ color:rgba(255,255,255,.82); max-width:54ch; margin:0 auto; }
+.fin-chips{ display:flex; gap:14px; justify-content:center; flex-wrap:wrap; margin-top:30px; }
+.fin-chips .c{ display:inline-flex; align-items:center; gap:10px; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.18); border-radius:999px; padding:13px 22px; font-weight:600; animation:finGlow 3.4s ease-in-out infinite; }
+.fin-chips .c svg{ color:var(--accent-bright); }
+.fin-chips .c .fin-emoji{ display:inline-block; font-size:1.2rem; line-height:1; animation:finBob 2.4s ease-in-out infinite; }
+.fin-chips .c:nth-child(2){ animation-delay:.55s; } .fin-chips .c:nth-child(3){ animation-delay:1.1s; }
+.fin-chips .c:nth-child(2) .fin-emoji{ animation-delay:.3s; } .fin-chips .c:nth-child(3) .fin-emoji{ animation-delay:.6s; }
+@keyframes finBob{ 0%,100%{ transform:translateY(0) rotate(0); } 50%{ transform:translateY(-3px) rotate(-5deg); } }
+@keyframes finGlow{ 0%,100%{ box-shadow:0 0 0 rgba(212,181,142,0); border-color:rgba(255,255,255,.18); } 50%{ box-shadow:0 0 20px rgba(212,181,142,.22); border-color:rgba(212,181,142,.5); } }
+
+/* doctors */
+.doc-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:20px; margin-top:38px; max-width:760px; }
+.doc{ display:flex; align-items:center; gap:20px; background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:24px; transition:.3s; }
+.doc:hover{ border-color:var(--accent); transform:translateY(-3px); box-shadow:var(--shadow); }
+.doc .mono{ flex-shrink:0; width:72px; height:72px; border-radius:50%; display:grid; place-items:center; font-family:var(--serif); font-weight:700; font-size:1.7rem; color:#fff; background:linear-gradient(135deg,var(--accent),var(--accent-deep)); }
+.doc h3{ font-family:var(--serif); font-size:1.35rem; font-weight:700; }
+html[lang="ar"] .doc h3{ font-weight:600; }
+.doc span{ color:var(--txt-mute); font-size:.9rem; }
+
+/* why */
+.why-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:18px; margin-top:38px; }
+.why{ background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:26px; transition:.3s; }
+.why:hover{ border-color:var(--accent); transform:translateY(-4px); box-shadow:var(--shadow); }
+.why .ic{ position:relative; width:50px; height:50px; border-radius:14px; display:grid; place-items:center; background:color-mix(in srgb,var(--accent) 12%,transparent); color:var(--accent-deep); margin-bottom:16px; }
+.why .ic::after{ content:""; position:absolute; inset:-2px; border-radius:16px; border:1.5px solid var(--accent); opacity:0; }
+html.p-ready .why.in .ic::after{ animation:ping 2.2s ease-out var(--pd,0ms) infinite; }
+@keyframes ping{ 0%{ transform:scale(.9); opacity:.6; } 70%{ opacity:0; } 100%{ transform:scale(1.5); opacity:0; } }
+.why h3{ font-size:1.1rem; font-weight:700; margin-bottom:6px; }
+.why p{ color:var(--txt-soft); font-size:.92rem; }
+
+/* reviews */
+.reviews{ background:var(--panel-2); text-align:center; }
+.rev-stars{ color:var(--accent); font-size:2.4rem; letter-spacing:6px; }
+.rev-frame{ color:var(--txt-soft); margin-top:10px; }
+.rev-quote{ font-family:var(--serif); font-size:clamp(1.5rem,3vw,2.2rem); font-weight:600; max-width:22ch; margin:24px auto 0; line-height:1.4; }
+html[lang="ar"] .rev-quote{ font-weight:500; max-width:30ch; }
+.rev-marquee{ margin-top:38px; overflow:hidden; direction:ltr; -webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent); mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent); }
+.rev-track{ display:flex; gap:18px; width:max-content; direction:ltr; animation:revScroll 78s linear infinite; }
+.rev-marquee:hover .rev-track{ animation-play-state:paused; }
+@keyframes revScroll{ from{ transform:translateX(0); } to{ transform:translateX(-50%); } }
+.rev-card{ flex:0 0 322px; direction:ltr; background:var(--panel); border:1px solid var(--line-soft); border-radius:18px; padding:22px; text-align:start; box-shadow:0 12px 30px rgba(45,28,12,.07); display:flex; flex-direction:column; gap:12px; }
+html[dir="rtl"] .rev-card{ direction:rtl; }
+.rev-card .top{ display:flex; align-items:center; gap:12px; }
+.rev-card .av{ width:42px; height:42px; border-radius:50%; display:grid; place-items:center; color:#fff; font-weight:700; font-size:1.1rem; flex:0 0 auto; }
+.rev-card .who{ display:flex; flex-direction:column; line-height:1.3; min-width:0; }
+.rev-card .who b{ font-size:.95rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; max-width:205px; }
+.rev-card .who .meta{ font-size:.74rem; color:var(--txt-mute); }
+.rev-card .rc-stars{ color:#FBBC04; font-size:1rem; letter-spacing:2px; }
+.rev-card p{ font-size:.93rem; line-height:1.7; color:var(--txt-soft); margin:0; text-align:start; display:-webkit-box; -webkit-line-clamp:5; -webkit-box-orient:vertical; overflow:hidden; min-height:6.4em; }
+.rev-card .gbadge{ display:flex; align-items:center; gap:6px; font-size:.74rem; color:var(--txt-mute); margin-top:auto; }
+.rev-cta{ display:inline-flex; align-items:center; gap:8px; margin-top:30px; padding:12px 24px; border-radius:999px; border:1px solid var(--line-soft); background:var(--panel); color:var(--txt); font-weight:600; font-size:.92rem; transition:transform .2s,border-color .2s,color .2s; }
+.rev-cta:hover{ border-color:var(--accent); color:var(--accent-deep); transform:translateY(-2px); }
+
+/* contact */
+.contact-grid{ display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start; margin-top:38px; }
+.lead-form{ display:grid; gap:15px; background:var(--panel); border:1px solid var(--line-soft); border-radius:var(--r); padding:30px; }
+.lead-form .row{ display:grid; grid-template-columns:1fr 1fr; gap:15px; }
+.fld{ display:grid; gap:7px; }
+.fld label{ font-size:.82rem; font-weight:600; color:var(--txt-soft); }
+.lead-form input,.lead-form select,.lead-form textarea{ width:100%; padding:14px 16px; border-radius:12px; border:1px solid var(--line); background:var(--ink-2); color:var(--txt); font-family:var(--sans); font-size:.98rem; transition:.2s; }
+.lead-form input:focus,.lead-form select:focus,.lead-form textarea:focus{ outline:none; border-color:var(--accent); background:var(--panel); box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 22%,transparent); }
+.lead-form textarea{ min-height:96px; resize:vertical; }
+html[lang="ar"] .lead-form input,html[lang="ar"] .lead-form select,html[lang="ar"] .lead-form textarea{ text-align:right; direction:rtl; }
+.info-line{ display:flex; align-items:center; gap:13px; padding:15px 0; border-bottom:1px solid var(--line-soft); color:inherit; transition:.25s; }
+a.info-line:hover{ color:var(--accent-deep); }
+.info-line .ic{ width:44px; height:44px; border-radius:12px; display:grid; place-items:center; border:1px solid color-mix(in srgb,var(--accent) 34%,var(--line)); background:color-mix(in srgb,var(--accent) 11%,transparent); color:var(--accent-deep); flex-shrink:0; transition:.25s; }
+a.info-line:hover .ic{ background:var(--accent); color:#fff; }
+.info-line b{ display:block; font-weight:700; }
+.info-line span{ color:var(--txt-mute); font-size:.86rem; }
+.map{ width:100%; border:0; border-radius:var(--r); margin-top:6px; aspect-ratio:16/10; }
+html[data-theme="dark"] .map{ filter:invert(.9) hue-rotate(180deg) brightness(.95); }
+
+/* footer */
+footer{ background:#17120B; color:#C3B9A6; padding:62px 0 30px; border-top:3px solid var(--accent); }
+footer .logo{ color:#fff; }
+.foot-grid{ display:grid; grid-template-columns:1.7fr 1fr 1.2fr; gap:34px; align-items:start; }
+.foot-tag{ color:#988e7d; max-width:40ch; margin:16px 0 22px; line-height:1.7; font-size:.95rem; }
+.foot-grid h4{ color:#fff; font-size:1rem; margin-bottom:16px; font-weight:700; }
+.foot-grid a{ display:block; color:#b6ab98; padding:6px 0; font-size:.93rem; transition:.2s; }
+.foot-grid a:hover{ color:var(--accent-bright); }
+.foot-social{ display:flex; gap:10px; }
+.foot-grid a.foot-soc{ width:40px; height:40px; padding:0; border-radius:50%; display:grid; place-items:center; border:1px solid rgba(255,255,255,.16); color:#cfc4af; }
+.foot-grid a.foot-soc:hover{ background:var(--accent); color:#17120B; border-color:var(--accent); transform:translateY(-3px); }
+.foot-grid a.foot-ct{ display:inline-flex; align-items:center; gap:10px; }
+.foot-ct svg{ color:var(--accent-bright); flex-shrink:0; }
+.foot-bottom{ display:flex; justify-content:center; text-align:center; margin-top:46px; padding-top:22px; border-top:1px solid rgba(255,255,255,.1); }
+.foot-note{ color:#7f7565; font-size:.8rem; max-width:80ch; }
+
+/* whatsapp float */
+.wa-float{ position:fixed; inset-block-end:22px; inset-inline-start:22px; z-index:80; width:58px; height:58px; border-radius:50%; background:#25D366; color:#fff; display:grid; place-items:center; box-shadow:0 12px 30px rgba(0,0,0,.3); }
+.wa-float::before{ content:""; position:absolute; inset:0; border-radius:50%; background:#25D366; opacity:.45; animation:wap 2.4s ease-out infinite; z-index:-1; }
+@keyframes wap{ 0%{ transform:scale(1); opacity:.45; } 100%{ transform:scale(1.9); opacity:0; } }
+
+/* reveals + replay */
+@keyframes rise{ from{ opacity:0; transform:translateY(34px); } to{ opacity:1; transform:none; } }
+@keyframes pop{ from{ opacity:0; transform:translateY(28px) scale(.96); } to{ opacity:1; transform:none; } }
+@keyframes draw{ from{ stroke-dashoffset:200; } to{ stroke-dashoffset:0; } }
+html.p-ready .reveal{ opacity:0; }
+html.p-ready .reveal.in{ animation:rise .8s cubic-bezier(.33,1,.68,1) both; }
+.stagger>.reveal.in{ animation-delay:calc(var(--i,0)*90ms); }
+html.p-ready .svc-grid .card,html.p-ready .why-grid .why{ opacity:0; }
+html.p-ready .svc-grid .card.in,html.p-ready .why-grid .why.in{ animation:pop .8s cubic-bezier(.33,1,.68,1) calc(var(--i,0)*100ms) both; }
+html.p-ready .why.in .ic svg>*{ stroke-dasharray:200; animation:draw 1.2s ease forwards; }
+/* services — always-on dental motion */
+@keyframes svcTwinkle{ 0%,100%{ transform:scale(.45); opacity:.25; } 50%{ transform:scale(1.12); opacity:1; } }
+@keyframes svcBob{ 0%,100%{ transform:translateY(0) rotate(0); } 50%{ transform:translateY(-2.4px) rotate(-4deg); } }
+@keyframes svcWave{ 0%,100%{ opacity:.32; } 50%{ opacity:1; } }
+.svc-grid .ic .svc-sparkle{ transform-box:fill-box; transform-origin:center; animation:svcTwinkle 2.4s ease-in-out infinite; }
+.svc-grid .ic .svc-bob{ transform-box:fill-box; transform-origin:center; animation:svcBob 2.2s ease-in-out infinite; }
+.svc-grid .ic .svc-teeth path{ animation:svcWave 1.7s ease-in-out infinite; }
+.svc-grid .ic .svc-teeth path:nth-child(2){ animation-delay:.22s; }
+.svc-grid .ic .svc-teeth path:nth-child(3){ animation-delay:.44s; }
+@media(prefers-reduced-motion:reduce){ .svc-grid .ic .svc-sparkle,.svc-grid .ic .svc-bob,.svc-grid .ic .svc-teeth path{ animation-duration:2.4s!important; } }
+
+/* mobile */
+@media(max-width:920px){
+  nav.links{ position:fixed; inset-block:74px 0; inset-inline-end:0; width:min(82vw,330px); flex-direction:column; align-items:flex-start; gap:6px; padding:28px; background:var(--panel); border-inline-start:1px solid var(--line-soft); transform:translateX(100%); transition:transform .35s; overflow:auto; z-index:70; }
+  html[dir="rtl"] nav.links{ transform:translateX(-100%); }
+  nav.links.open{ transform:translateX(0); } html[dir="rtl"] nav.links.open{ transform:translateX(0); }
+  nav.links a{ font-size:1.1rem; padding:7px 0; }
+  #burger{ display:flex; margin-inline-start:auto; } .hdr-cta{ display:none; }
+  .smartee-grid,.contact-grid{ grid-template-columns:1fr; gap:30px; }
+  .trust-grid{ grid-template-columns:1fr 1fr; gap:24px; }
+  .svc-grid,.why-grid,.doc-grid{ grid-template-columns:1fr; }
+  .foot-grid{ grid-template-columns:1fr; gap:24px; }
+  .lead-form .row{ grid-template-columns:1fr; }
+}
+@media(max-width:560px){ .why-grid{ grid-template-columns:1fr 1fr; } }
+@media(max-width:920px){ .wa-float{ width:52px; height:52px; inset-block-end:16px; inset-inline-start:14px; } }
+</style>
+</head>
+<body id="top">
+
+<header><div class="wrap"><div class="nav">
+  <a href="#top" class="logo"><span class="tab"></span><span data-en="PURE" data-ar="بيور">بيور</span></a>
+  <nav class="links" id="nav">
+    <a href="#services" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+    <a href="#gallery" data-en="Smile Gallery" data-ar="معرض الابتسامات">معرض الابتسامات</a>
+    <a href="#doctors" data-en="Doctors" data-ar="الأطباء">الأطباء</a>
+    <a href="#financing" data-en="Financing" data-ar="التقسيط">التقسيط</a>
+    <a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+  </nav>
+  <div class="tools">
+    <button class="icon-btn" id="themeBtn" aria-label="theme">☾</button>
+    <button class="icon-btn" id="langBtn" aria-label="language">EN</button>
+    <a class="btn btn-primary hdr-cta" id="wa-hdr" href="#" target="_blank" rel="noopener" data-en="Book Now" data-ar="احجز الآن">احجز الآن</a>
+    <button id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</div></div></header>
+
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><canvas id="toothCanvas"></canvas></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal" data-en="Pure Dental Center · Kuwait" data-ar="مركز بيور لطب الأسنان · الكويت">مركز بيور لطب الأسنان · الكويت</span>
+    <h1 class="reveal" data-en="Stay Pure. Let your <span class='y'>smile</span> do the talking." data-ar="خلّك بيور.. وخلّ <span class='y'>ابتسامتك</span> تتكلّم عنك">خلّك بيور.. وخلّ <span class="y">ابتسامتك</span> تتكلّم عنك</h1>
+    <p class="reveal" data-en="Premium family and cosmetic dental care, with a feel that puts you at ease from the very first visit — in the heart of Kuwait City." data-ar="عناية أسنان راقية للعائلة والابتسامة، بلمسة تخليك مرتاح من أول زيارة — في قلب مدينة الكويت.">عناية أسنان راقية للعائلة والابتسامة، بلمسة تخليك مرتاح من أول زيارة — في قلب مدينة الكويت.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" id="wa-hero" href="#" target="_blank" rel="noopener" data-en="Book on WhatsApp" data-ar="احجز عبر واتساب">احجز عبر واتساب</a>
+      <a class="btn btn-ghost" href="tel:+96522280100" data-en="Call <bdi dir='ltr'>2228 0100</bdi>" data-ar="اتصل <bdi dir='ltr'>2228 0100</bdi>">اتصل <bdi dir="ltr">2228 0100</bdi></a>
+    </div>
+    <div class="hero-chips reveal">
+      <span class="chip"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.6 6.3 6.8.5-5.2 4.4 1.6 6.6L12 16.9 6.2 20.3l1.6-6.6-5.2-4.4 6.8-.5z"/></svg><span data-en="5.0 on Google" data-ar="٥٫٠ على جوجل">٥٫٠ على جوجل</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3c-2 0-4 1.2-4 4 0 2 .5 3 .9 6 .4 3 .6 8 2.1 8 1 0 1-3 2-5s1-2 1-2 0 0 1 2 1 5 2 5c1.5 0 1.7-5 2.1-8 .4-3 .9-4 .9-6 0-2.8-2-4-4-4-1.3 0-2 .7-3 .7S9.3 3 8 3z"/></svg><span data-en="Smartee Certified Partner" data-ar="شريك Smartee معتمد">شريك Smartee معتمد</span></span>
+      <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10.5h18"/><path d="M7 15.5h3"/></svg><span data-en="0% interest-free financing" data-ar="تقسيط بدون فوائد">تقسيط بدون فوائد</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="trust" style="padding:44px 0"><div class="wrap"><div class="trust-grid stagger">
+  <div class="t reveal" style="--i:0"><div class="stars">★★★★★</div><div class="l" data-en="Rated on Google" data-ar="تقييم جوجل">تقييم جوجل</div></div>
+  <div class="t reveal" style="--i:1"><div class="n"><bdi dir="ltr" data-num="49">49</bdi></div><div class="l" data-en="Google reviews" data-ar="تقييم على جوجل">تقييم على جوجل</div></div>
+  <div class="t reveal" style="--i:2"><div class="n"><bdi dir="ltr" data-num="9000">9,000</bdi>+</div><div class="l" data-en="Followers" data-ar="متابع">متابع</div></div>
+  <div class="t reveal" style="--i:3"><div class="n">Smartee</div><div class="l" data-en="Certified partner" data-ar="شريك معتمد">شريك معتمد</div></div>
+  <div class="t reveal" style="--i:4"><div class="n"><bdi dir="ltr" data-num="0">0</bdi>%</div><div class="l" data-en="Installments" data-ar="تقسيط">تقسيط</div></div>
+</div></div></section>
+
+<section id="services"><div class="wrap">
+  <span class="eyebrow reveal" data-en="What we do" data-ar="خدماتنا">خدماتنا</span>
+  <h2 class="h2 reveal" data-en="Everything your smile needs — <span class='mark'>under one roof</span>" data-ar="كل اللي تحتاجه ابتسامتك.. <span class='mark'>تحت سقف واحد</span>">كل اللي تحتاجه ابتسامتك.. <span class="mark">تحت سقف واحد</span></h2>
+  <div class="svc-grid stagger">
+    <div class="card reveal" style="--i:0"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4.4c-1.4 0-2.3-.9-3.9-.9-2 0-3.4 1.4-3.4 3.6 0 1.4.4 2.6.9 4.6.4 1.8.6 4.3 1.7 4.3.9 0 1-2 1.5-3.7.3-.9.6-1.4 1.2-1.4s.9.5 1.2 1.4c.5 1.7.6 3.7 1.5 3.7 1.1 0 1.3-2.5 1.7-4.3.5-2 .9-3.2.9-4.6 0-2.2-1.4-3.6-3.4-3.6-1.6 0-2.5.9-3.9.9z"/><path class="svc-sparkle" d="M19 3.2l.65 1.95 1.95.65-1.95.65-.65 1.95-.65-1.95-1.95-.65 1.95-.65z" fill="currentColor" stroke="none"/></svg></div><h3 data-en="Cosmetic &amp; Smile Design" data-ar="تجميل وتصميم الابتسامة">تجميل وتصميم الابتسامة</h3><p data-en="We design a smile that's truly yours — balanced, natural, and confident enough to feel from the first glance. It's not just beautiful teeth; it's how you feel when you smile." data-ar="نصمّم لك ابتسامة تشبهك — متناسقة، طبيعية، وتعطيك ثقة تحسّها من أول نظرة. هدفنا مو بس أسنان حلوة، هدفنا إحساسك وأنت تبتسم.">نصمّم لك ابتسامة تشبهك — متناسقة، طبيعية، وتعطيك ثقة تحسّها من أول نظرة. هدفنا مو بس أسنان حلوة، هدفنا إحساسك وأنت تبتسم.</p><div class="tags"><span data-en="Smile design" data-ar="تصميم الابتسامة">تصميم الابتسامة</span></div></div>
+    <div class="card reveal" style="--i:1"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.6 9c0-2 2.2-3.1 7.4-3.1s7.4 1.1 7.4 3.1c0 4.6-2.1 9.1-7.4 9.1S4.6 13.6 4.6 9z"/><g class="svc-teeth"><path d="M8.2 8.4v4.6"/><path d="M12 8v5.4"/><path d="M15.8 8.4v4.6"/></g></svg></div><h3 data-en="Smartee Clear Aligners" data-ar="تقويم سمارتي الشفّاف">تقويم سمارتي الشفّاف</h3><p data-en="Clear aligners that straighten your teeth quietly — comfortable, removable at mealtimes, and easy to fit around your day instead of changing it." data-ar="تقويم شفّاف يعدّل أسنانك بهدوء وبدون ما أحد يلاحظ — مريح، يتشال وقت الأكل، ويمشي مع روتينك بدون ما يغيّره.">تقويم شفّاف يعدّل أسنانك بهدوء وبدون ما أحد يلاحظ — مريح، يتشال وقت الأكل، ويمشي مع روتينك بدون ما يغيّره.</p><div class="tags"><span data-en="Clear aligners" data-ar="تقويم شفّاف">تقويم شفّاف</span></div></div>
+    <div class="card reveal" style="--i:2"><div class="ic"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 4.6c-1.2 0-2-.8-3.4-.8-1.7 0-2.9 1.2-2.9 3.1 0 1.2.3 2.2.8 4 .3 1.5.5 3.7 1.4 3.7.8 0 .9-1.7 1.3-3.2.2-.8.5-1.2.9-1.2s.7.4.9 1.2c.4 1.5.5 3.2 1.3 3.2.9 0 1.1-2.2 1.4-3.7.5-1.8.8-2.8.8-4 0-1.9-1.2-3.1-2.9-3.1-1.4 0-2.2.8-3.4.8z"/><path class="svc-bob" d="M18 11.4c-.8 0-1.3-.5-2.2-.5-1.1 0-1.9.8-1.9 2 0 .8.2 1.4.5 2.6.2 1 .3 2.4.9 2.4.5 0 .6-1.1.8-2.1.1-.5.3-.8.6-.8s.5.3.6.8c.3 1 .4 2.1.9 2.1.6 0 .7-1.4.9-2.4.3-1.2.5-1.8.5-2.6 0-1.2-.8-2-1.9-2-.9 0-1.4.5-2.2.5z"/></svg></div><h3 data-en="Family &amp; Kids Care" data-ar="عناية العائلة والأطفال">عناية العائلة والأطفال</h3><p data-en="From the littlest one at home to the grown-ups — gentle care that turns the dental visit into something your kids look forward to, not something they dread." data-ar="من أصغر فرد بالبيت لين الكبار — عناية لطيفة تخلّي زيارة الأسنان تجربة حلوة مو شي يتهيّبونه عيالك.">من أصغر فرد بالبيت لين الكبار — عناية لطيفة تخلّي زيارة الأسنان تجربة حلوة مو شي يتهيّبونه عيالك.</p><div class="tags"><span data-en="General" data-ar="طب أسنان عام">طب أسنان عام</span><span data-en="Pediatric" data-ar="أطفال">أطفال</span><span data-en="Orthodontics" data-ar="تقويم">تقويم</span></div></div>
+  </div>
+</div></section>
+
+<section class="smartee" id="smartee"><div class="wrap"><div class="smartee-grid">
+  <div class="aligner-stage reveal in">
+    <img src="https://images.unsplash.com/photo-1609840114035-3c981b782dfe?auto=format&fit=crop&w=1100&q=80" alt="Clear aligner / تقويم شفّاف" loading="lazy" onerror="this.style.display='none'">
+    <div class="shine"></div>
+  </div>
+  <div>
+    <span class="eyebrow reveal" data-en="Smartee Certified Partner" data-ar="شريك Smartee المعتمد">شريك Smartee المعتمد</span>
+    <h2 class="h2 reveal" data-en="Stay smart. Discreetly <span class='mark'>straighten</span> — without anyone noticing." data-ar="خلّك سمارتي.. وعدّل <span class='mark'>ابتسامتك</span> بهدوء وبدون ما أحد يدري">خلّك سمارتي.. وعدّل <span class="mark">ابتسامتك</span> بهدوء وبدون ما أحد يدري</h2>
+    <ul class="benefits reveal">
+      <li><span class="bi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span data-en="Nearly invisible — straighten up while staying fully confident." data-ar="شفّاف تقريباً ما يبيّن — تقوّم وأنت مرتاح بثقتك.">شفّاف تقريباً ما يبيّن — تقوّم وأنت مرتاح بثقتك.</span></li>
+      <li><span class="bi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span data-en="Easily removable at mealtimes and for brushing — no restrictions." data-ar="يتشال بسهولة وقت الأكل وتنظيف أسنانك، بدون قيود.">يتشال بسهولة وقت الأكل وتنظيف أسنانك، بدون قيود.</span></li>
+      <li><span class="bi"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><span data-en="Custom-made for you by a certified partner, step by step." data-ar="مصمّم خصيصاً لك من شريك معتمد، خطوة بخطوة.">مصمّم خصيصاً لك من شريك معتمد، خطوة بخطوة.</span></li>
+    </ul>
+    <a class="btn btn-primary reveal" id="wa-smartee" href="#" target="_blank" rel="noopener" style="margin-top:24px" data-en="Ask about Smartee" data-ar="استفسر عن سمارتي">استفسر عن سمارتي</a>
+  </div>
+</div></div></section>
+
+<section id="gallery"><div class="wrap" style="text-align:center">
+  <span class="eyebrow reveal" data-en="Smile gallery" data-ar="معرض الابتسامات">معرض الابتسامات</span>
+  <h2 class="h2 reveal" data-en="Smiles that <span class='mark'>speak</span> for themselves" data-ar="ابتسامات <span class='mark'>تتكلّم</span> عن نفسها">ابتسامات <span class="mark">تتكلّم</span> عن نفسها</h2>
+  <p class="lead reveal" style="margin-inline:auto" data-en="Representative images of the kind of results we work toward — every smile is a story that starts with one visit." data-ar="صور توضيحية لشكل النتائج اللي نشتغل عليها — كل ابتسامة قصة تبدأ من زيارة.">صور توضيحية لشكل النتائج اللي نشتغل عليها — كل ابتسامة قصة تبدأ من زيارة.</p>
+  <div class="ba-wrap reveal">
+    <div class="ba" id="ba">
+      <img class="after" src="https://images.unsplash.com/photo-1660732205495-f65510d8180e?auto=format&fit=crop&w=1100&q=80" alt="">
+      <img class="before" src="https://images.unsplash.com/photo-1660732205495-f65510d8180e?auto=format&fit=crop&w=1100&q=80" alt="">
+      <span class="tag t-before" data-en="Before" data-ar="قبل">قبل</span>
+      <span class="tag t-after" data-en="After" data-ar="بعد">بعد</span>
+      <div class="handle" id="ba-handle"></div>
+      <div class="knob" id="ba-knob"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l-4 6 4 6M15 6l4 6-4 6"/></svg></div>
+    </div>
+    <p class="ba-note" data-en="Drag to compare · representative illustration" data-ar="اسحب للمقارنة · صورة توضيحية">اسحب للمقارنة · صورة توضيحية</p>
+  </div>
+</div></section>
+
+<section class="fin" id="financing"><div class="wrap">
+  <span class="eyebrow reveal" style="color:#fff" data-en="Financing &amp; insurance" data-ar="تقسيط وتأمين">تقسيط وتأمين</span>
+  <h2 class="h2 reveal" data-en="Treat now.. <span class='mark'>pay later</span>" data-ar="علاج الحين.. <span class='mark'>وادفع بعدين</span>">علاج الحين.. <span class="mark">وادفع بعدين</span></h2>
+  <p class="reveal" data-en="Your smile shouldn't wait. Split your treatment at 0% through our partners, and stay Pure starting today." data-ar="ابتسامتك ما تنتظر. قسّط علاجك بـ ٠٪ فوائد عن طريق شركائنا، وخلّك بيور من اليوم.">ابتسامتك ما تنتظر. قسّط علاجك بـ ٠٪ فوائد عن طريق شركائنا، وخلّك بيور من اليوم.</p>
+  <div class="fin-chips reveal stagger">
+    <div class="c" style="--i:0"><span class="fin-emoji">💳</span><span data-en="0% installments via Deema" data-ar="تقسيط ٠٪ عبر Deema">تقسيط ٠٪ عبر Deema</span></div>
+    <div class="c" style="--i:1"><span class="fin-emoji">🏦</span><span data-en="Financing via Boubyan Bank" data-ar="تقسيط عبر بنك بوبيان">تقسيط عبر بنك بوبيان</span></div>
+    <div class="c" style="--i:2"><span class="fin-emoji">🛡️</span><span data-en="Insurance accepted" data-ar="نقبل التأمين">نقبل التأمين</span></div>
+  </div>
+</div></section>
+
+<section id="doctors"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Our team" data-ar="فريقنا">فريقنا</span>
+  <h2 class="h2 reveal" data-en="The doctors who'll <span class='mark'>take care</span> of you" data-ar="الأطباء اللي راح <span class='mark'>يهتمّون</span> فيك">الأطباء اللي راح <span class="mark">يهتمّون</span> فيك</h2>
+  <div class="doc-grid stagger">
+    <div class="doc reveal" style="--i:0"><div class="mono">د</div><div><h3 data-en="Dr. Abdulaziz" data-ar="د. عبدالعزيز">د. عبدالعزيز</h3><span data-en="Dentist" data-ar="طبيب أسنان">طبيب أسنان</span></div></div>
+    <div class="doc reveal" style="--i:1"><div class="mono">د</div><div><h3 data-en="Dr. Fawaz" data-ar="د. فواز">د. فواز</h3><span data-en="Dentist" data-ar="طبيب أسنان">طبيب أسنان</span></div></div>
+  </div>
+</div></section>
+
+<section style="background:var(--panel-2)" id="why"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Why Pure" data-ar="ليش بيور">ليش بيور</span>
+  <h2 class="h2 reveal" data-en="Because your smile deserves a <span class='mark'>different</span> experience" data-ar="لأن ابتسامتك تستاهل <span class='mark'>تجربة مختلفة</span>">لأن ابتسامتك تستاهل <span class="mark">تجربة مختلفة</span></h2>
+  <div class="why-grid stagger">
+    <div class="why reveal" style="--i:0;--pd:0ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.3 4.7 5.2.8-3.8 3.7.9 5.2L12 15.6 7.4 17.4l.9-5.2L4.5 8.5l5.2-.8z"/></svg></div><h3 data-en="A premium, calming experience" data-ar="تجربة راقية ومريحة">تجربة راقية ومريحة</h3><p data-en="A setting that puts you at ease — far from the usual clinical feel." data-ar="أجواء تخليك مرتاح، بعيدة عن جو العيادات التقليدي.">أجواء تخليك مرتاح، بعيدة عن جو العيادات التقليدي.</p></div>
+    <div class="why reveal" style="--i:1;--pd:500ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 01-12 7.7L3 21l1.8-6A8.5 8.5 0 1121 11.5z"/></svg></div><h3 data-en="Care that speaks your language" data-ar="عناية تتكلّم لغتك">عناية تتكلّم لغتك</h3><p data-en="A team that understands you and cares for you in Arabic, on your terms." data-ar="فريق يفهمك ويهتم فيك بالعربي، براحتك.">فريق يفهمك ويهتم فيك بالعربي، براحتك.</p></div>
+    <div class="why reveal" style="--i:2;--pd:1000ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><h3 data-en="In the heart of Kuwait City" data-ar="بقلب مدينة الكويت">بقلب مدينة الكويت</h3><p data-en="A central spot on Fahad Al-Salem St, easy to reach." data-ar="موقع مركزي بشارع فهد السالم، سهل توصله.">موقع مركزي بشارع فهد السالم، سهل توصله.</p></div>
+    <div class="why reveal" style="--i:3;--pd:1500ms"><div class="ic"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></div><h3 data-en="One-tap booking · 0% financing" data-ar="حجز بضغطة.. وتقسيط ٠٪">حجز بضغطة.. وتقسيط ٠٪</h3><p data-en="Book in seconds, and split your treatment with ease." data-ar="احجز بثوانٍ، وقسّط علاجك بكل أريحية.">احجز بثوانٍ، وقسّط علاجك بكل أريحية.</p></div>
+  </div>
+</div></section>
+
+<section class="reviews"><div class="wrap">
+  <span class="eyebrow reveal" data-en="What our patients say" data-ar="آراء مرضانا">آراء مرضانا</span>
+  <div class="rev-stars reveal">★★★★★</div>
+  <div class="rev-frame reveal" data-en="5.0 out of 5 on Google · based on 49 reviews" data-ar="٥٫٠ من ٥ على جوجل · بناءً على ٤٩ تقييم">٥٫٠ من ٥ على جوجل · بناءً على ٤٩ تقييم</div>
+  <p class="rev-quote reveal" data-en="“Every review from you makes us love what we do even more — and keep going for your smile.”" data-ar="«كل تقييم منكم يخلّينا نحب شغلنا أكثر — ونكمل عشان ابتسامتكم.»">«كل تقييم منكم يخلّينا نحب شغلنا أكثر — ونكمل عشان ابتسامتكم.»</p>
+
+  <div class="rev-marquee reveal"><div class="rev-track">
+    <div class="rev-card"><div class="top"><div class="av" style="background:#4285F4">ق</div><div class="who"><b dir="auto">قناة بدر محمد الغضوري</b><span class="meta" data-en="Local Guide · 59 reviews · 2 years ago" data-ar="مرشد محلي · ٥٩ تقييم · قبل سنتين">مرشد محلي · ٥٩ تقييم · قبل سنتين</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">عيادة أسنان على مستوى عالي جدًا، وأعتقد أفخم عيادة بالكويت من ناحية جمال الديكور والأثاث والمعدات الطبية الحديثة جدًا.. دكاترة كويتيين على مستوى عالي من الكفاءة، الله يوفقهم. شيء مشرّف بصراحة.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#0F9D58">T</div><div class="who"><b dir="auto">TWA</b><span class="meta" data-en="1 review · 11 months ago" data-ar="تقييم واحد · قبل ١١ شهر">تقييم واحد · قبل ١١ شهر</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">The best dental in Kuwait! Hands down. Dr. Abdul Aziz does an amazing job and you will feel extra satisfaction 😃</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#DB4437">g</div><div class="who"><b dir="auto">gh sh</b><span class="meta" data-en="Local Guide · 8 reviews · 2 years ago" data-ar="مرشد محلي · ٨ تقييمات · قبل سنتين">مرشد محلي · ٨ تقييمات · قبل سنتين</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">ماشاءالله تبارك الرحمن، عيادة أسنان راقية جدًا، استقبال راقي ومكان فخم يفتح النفس ومريح، وأجهزة طبية متطورة، وماشاءالله على الدكاترة.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#F4B400">ع</div><div class="who"><b dir="auto">Athbi Al-Humaidan</b><span class="meta" data-en="1 review · a year ago" data-ar="تقييم واحد · قبل سنة">تقييم واحد · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">أفضل عيادة أسنان بالنسبة لي، د. عبدالعزيز الشمري يعامل المريض بمهنية ويشرح الحالة ببساطة. تجربة مريحة من أول دخول.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#4285F4">S</div><div class="who"><b dir="auto">Soaud SSS</b><span class="meta" data-en="Local Guide · 15 reviews · a year ago" data-ar="مرشد محلي · ١٥ تقييم · قبل سنة">مرشد محلي · ١٥ تقييم · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">عيادة ممتازة بكل شيء، دكاترتها وموظفين الاستقبال وخدماتهم وموقعهم وتعاملهم 👌🏻 شكرًا جزيلًا، وأنصح فيهم وبقوة.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#DB4437">y</div><div class="who"><b dir="auto">yousef almulla</b><span class="meta" data-en="4 reviews · a year ago" data-ar="٤ تقييمات · قبل سنة">٤ تقييمات · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">راضٍ جدًا عن العيادة وخدماتها الترحيبية وموقعها المميز، وراضٍ جدًا عن خدمة التنظيف مع دكتور سعد الشمري، مع كل الشكر والتقدير.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#0F9D58">Y</div><div class="who"><b dir="auto">Yousef Alqattan</b><span class="meta" data-en="Local Guide · 15 reviews · a year ago" data-ar="مرشد محلي · ١٥ تقييم · قبل سنة">مرشد محلي · ١٥ تقييم · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">Very friendly, professional, highly recommended.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#F4B400">M</div><div class="who"><b dir="auto">M</b><span class="meta" data-en="1 review · a year ago" data-ar="تقييم واحد · قبل سنة">تقييم واحد · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">خدمة جميلة، ودكاترة أفضل منهم مافي، وعيادة فاخرة من الآخر ✨ شكرًا عيادة Pure.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#4285F4">M</div><div class="who"><b dir="auto">Mohammad Mekmekh</b><span class="meta" data-en="Local Guide · 27 reviews · a year ago" data-ar="مرشد محلي · ٢٧ تقييم · قبل سنة">مرشد محلي · ٢٧ تقييم · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">ممتاز، والاستقبال قوي، والدكاترة ممتازين، الله يعطيهم العافية، أنصح فيهم وبشدة.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+
+    <div class="rev-card"><div class="top"><div class="av" style="background:#DB4437">ع</div><div class="who"><b dir="auto">Abdulaziz Aldahi</b><span class="meta" data-en="3 reviews · a year ago" data-ar="٣ تقييمات · قبل سنة">٣ تقييمات · قبل سنة</span></div></div><div class="rc-stars">★★★★★</div><p dir="auto">أحلى عيادة أسنان فيج يا كويت 😍 تعامل راقي وخدمة تستاهل.</p><div class="gbadge"><svg viewBox="0 0 48 48" width="14" height="14"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Posted on Google" data-ar="عبر Google">عبر Google</span></div></div>
+  </div></div>
+
+  <a class="rev-cta reveal" href="https://www.google.com/maps/place/PURE+DENTAL+CENTER/@29.3718761,47.9680552,14z/data=!4m8!3m7!1s0x3fcf858ae860a1ab:0x38c5171f7697ceac!8m2!3d29.3696181!4d47.9706838!9m1!1b1!16s%2Fg%2F11kqdct0j0?hl=ar" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" width="16" height="16"><path fill="#4285F4" d="M45 24c0-1.6-.1-3.1-.4-4.5H24v9h11.8c-.5 2.7-2 5-4.3 6.6v5.5h7C42.6 36.8 45 30.9 45 24z"/><path fill="#34A853" d="M24 46c5.9 0 10.9-2 14.5-5.4l-7-5.5c-2 1.3-4.5 2.1-7.5 2.1-5.8 0-10.6-3.9-12.4-9.1H4.4v5.7C8 41.1 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.6 28.1c-.5-1.3-.7-2.7-.7-4.1s.3-2.8.7-4.1v-5.7H4.4C2.9 17.1 2 20.4 2 24s.9 6.9 2.4 9.8l7.2-5.7z"/><path fill="#EA4335" d="M24 10.8c3.2 0 6.1 1.1 8.4 3.3l6.3-6.3C34.9 4.1 29.9 2 24 2 15.4 2 8 6.9 4.4 14.2l7.2 5.7C13.4 14.7 18.2 10.8 24 10.8z"/></svg><span data-en="Read all reviews on Google" data-ar="اقرأ كل التقييمات على Google">اقرأ كل التقييمات على Google</span></a>
+</div></section>
+
+<section id="contact"><div class="wrap">
+  <span class="eyebrow reveal" data-en="Find us" data-ar="موقعنا">موقعنا</span>
+  <h2 class="h2 reveal" data-en="Come visit — your smile is <span class='mark'>worth it</span>" data-ar="تعال زورنا.. ابتسامتك <span class='mark'>تستاهل</span>">تعال زورنا.. ابتسامتك <span class="mark">تستاهل</span></h2>
+  <div class="contact-grid">
+    <form class="lead-form reveal" onsubmit="return waSubmit(event)">
+      <div class="row">
+        <div class="fld"><label data-en="Name" data-ar="الاسم">الاسم</label><input id="f-name" required data-en-ph="Your name" data-ar-ph="اسمك" placeholder="اسمك"></div>
+        <div class="fld"><label data-en="Phone" data-ar="رقم الهاتف">رقم الهاتف</label><input id="f-phone" type="tel" data-en-ph="Your phone number" data-ar-ph="أدخل رقم هاتفك" placeholder="أدخل رقم هاتفك"></div>
+      </div>
+      <div class="fld"><label data-en="What do you need?" data-ar="شنو تحتاج؟">شنو تحتاج؟</label>
+        <select id="f-svc">
+          <option value="" data-en="Choose a service" data-ar="اختر الخدمة">اختر الخدمة</option>
+          <option data-en="Cosmetic / Smile design" data-ar="تجميل / تصميم ابتسامة">تجميل / تصميم ابتسامة</option>
+          <option data-en="Smartee clear aligners" data-ar="تقويم سمارتي الشفّاف">تقويم سمارتي الشفّاف</option>
+          <option data-en="Family / Kids care" data-ar="عناية العائلة / الأطفال">عناية العائلة / الأطفال</option>
+          <option data-en="General check-up" data-ar="فحص عام">فحص عام</option>
+        </select>
+      </div>
+      <div class="fld"><label data-en="Message" data-ar="ملاحظات">ملاحظات</label><textarea id="f-msg" data-en-ph="Tell us how we can help…" data-ar-ph="خبّرنا كيف نقدر نساعدك…" placeholder="خبّرنا كيف نقدر نساعدك…"></textarea></div>
+      <button type="submit" class="btn btn-primary" style="justify-content:center" data-en="Send via WhatsApp" data-ar="أرسل عبر واتساب">أرسل عبر واتساب</button>
+    </form>
+    <div class="reveal">
+      <a class="info-line" id="wa-info" href="#" target="_blank" rel="noopener"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2z"/></svg></div><div><b><bdi dir="ltr">+965 2228 0100</bdi></b><span data-en="WhatsApp &amp; Booking" data-ar="واتساب والحجز">واتساب والحجز</span></div></a>
+      <a class="info-line" href="mailto:puredckw@gmail.com"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></div><div><b><bdi dir="ltr">puredckw@gmail.com</bdi></b><span data-en="Email" data-ar="البريد الإلكتروني">البريد الإلكتروني</span></div></a>
+      <div class="info-line"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div><div><b data-en="Burj Shaikha — Floor 13" data-ar="برج شيخة — الدور ١٣">برج شيخة — الدور ١٣</b><span data-en="Fahad Al-Salem St, Qibla, Kuwait City" data-ar="شارع فهد السالم، قبلة، مدينة الكويت">شارع فهد السالم، قبلة، مدينة الكويت</span></div></div>
+      <a class="info-line" href="https://instagram.com/pure_kw_" target="_blank" rel="noopener"><div class="ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></div><div><b><bdi dir="ltr">@pure_kw_</bdi></b><span data-en="Follow us · book your appointment" data-ar="تابعنا · احجز موعدك">تابعنا · احجز موعدك</span></div></a>
+      <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Fahad%20Al-Salem%20Street%20Kuwait%20City&z=15&output=embed"></iframe>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div>
+      <a href="#top" class="logo"><span class="tab"></span><span data-en="PURE" data-ar="بيور">بيور</span></a>
+      <p class="foot-tag" data-en="Pure Dental Center — premium family &amp; cosmetic dental care in the heart of Kuwait City. Stay Pure." data-ar="مركز بيور لطب الأسنان — عناية أسنان راقية للعائلة والابتسامة في قلب مدينة الكويت. خلّك بيور.">مركز بيور لطب الأسنان — عناية أسنان راقية للعائلة والابتسامة في قلب مدينة الكويت. خلّك بيور.</p>
+      <div class="foot-social">
+        <a class="foot-soc" href="https://instagram.com/pure_kw_" target="_blank" rel="noopener" aria-label="Instagram"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+        <a class="foot-soc" id="wa-foot" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20z"/></svg></a>
+        <a class="foot-soc" href="mailto:puredckw@gmail.com" aria-label="Email"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <h4 data-en="Explore" data-ar="تصفّح">تصفّح</h4>
+      <a href="#services" data-en="Services" data-ar="خدماتنا">خدماتنا</a>
+      <a href="#gallery" data-en="Smile Gallery" data-ar="معرض الابتسامات">معرض الابتسامات</a>
+      <a href="#financing" data-en="Financing" data-ar="التقسيط">التقسيط</a>
+      <a href="#contact" data-en="Contact" data-ar="تواصل معنا">تواصل معنا</a>
+    </div>
+    <div>
+      <h4 data-en="Get in Touch" data-ar="للتواصل">للتواصل</h4>
+      <a class="foot-ct" id="wa-foot2" href="#" target="_blank" rel="noopener"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2z"/></svg><bdi dir="ltr">+965 2228 0100</bdi></a>
+      <a class="foot-ct" href="mailto:puredckw@gmail.com"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><bdi dir="ltr">puredckw@gmail.com</bdi></a>
+      <a class="foot-ct" href="#contact"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span data-en="Burj Shaikha, Fahad Al-Salem St" data-ar="برج شيخة، شارع فهد السالم">برج شيخة، شارع فهد السالم</span></a>
+      <span style="display:block;color:#7f7565;font-size:.84rem;margin-top:10px" data-en="License No. 260/أ" data-ar="ترخيص رقم ٢٦٠/أ">ترخيص رقم ٢٦٠/أ</span>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p class="foot-note" data-en="© Pure Dental Center. Demonstration site by Netofy for showcase purposes — some details are sample and should be confirmed before use." data-ar="© مركز بيور لطب الأسنان. موقع تجريبي من إعداد Netofy لأغراض العرض — بعض البيانات نموذجية ويُرجى تأكيدها قبل الاعتماد.">© مركز بيور لطب الأسنان. موقع تجريبي من إعداد Netofy لأغراض العرض — بعض البيانات نموذجية ويُرجى تأكيدها قبل الاعتماد.</p>
+  </div>
+</div></footer>
+
+<a class="wa-float" id="wa-fab" href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15l-1.4 5 5.1-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8 8 0 1112 20zm4.5-5.9c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1a6.5 6.5 0 01-1.9-1.2 7.2 7.2 0 01-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.1 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2c0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9 2.6 1.1 2.6.8 3.1.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2 0-.1-.2-.2-.5-.3z"/></svg>
+</a>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+/* hero — premium 3D tooth (WebGL), warm studio light, sway + float + whitening sparkles */
+(function(){
+  var canvas=document.getElementById('toothCanvas');
+  if(!canvas||!window.THREE){ return; }
+  var THREE=window.THREE, host=canvas.parentElement, renderer;
+  try{ renderer=new THREE.WebGLRenderer({canvas:canvas,alpha:true,antialias:true}); }catch(e){ return; }
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
+  if(THREE.sRGBEncoding) renderer.outputEncoding=THREE.sRGBEncoding;
+  renderer.toneMapping=THREE.ACESFilmicToneMapping; renderer.toneMappingExposure=1.0;
+
+  var scene=new THREE.Scene();
+  var camera=new THREE.PerspectiveCamera(38,1,0.1,100); camera.position.set(0,0,10);
+
+  /* warm studio environment for reflections */
+  var env=null;
+  try{
+    var ec=document.createElement('canvas'); ec.width=ec.height=128; var ex=ec.getContext('2d');
+    var eg=ex.createLinearGradient(0,0,0,128);
+    eg.addColorStop(0,'#fff4e2'); eg.addColorStop(.45,'#d8b488'); eg.addColorStop(1,'#2c1f12');
+    ex.fillStyle=eg; ex.fillRect(0,0,128,128);
+    var et=new THREE.CanvasTexture(ec); et.mapping=THREE.EquirectangularReflectionMapping;
+    var pm=new THREE.PMREMGenerator(renderer); env=pm.fromEquirectangular(et).texture; et.dispose(); pm.dispose();
+    scene.environment=env;
+  }catch(e){}
+
+  scene.add(new THREE.AmbientLight(0xffe9d2,0.4));
+  var key=new THREE.DirectionalLight(0xfff1dc,1.45); key.position.set(5,6,5); scene.add(key);
+  var fill=new THREE.DirectionalLight(0xb6d2ff,0.4); fill.position.set(-6,0,3); scene.add(fill);
+  var rim=new THREE.DirectionalLight(0xffce98,1.1); rim.position.set(-4,3,-5); scene.add(rim);
+
+  /* tooth silhouette → extruded + beveled = smooth 3D tooth */
+  var s=new THREE.Shape();
+  s.moveTo(-1.00,0.62);
+  s.bezierCurveTo(-1.07,1.16, -0.86,1.52, -0.45,1.49);   /* left cusp */
+  s.bezierCurveTo(-0.20,1.47, -0.13,1.16, 0.00,1.16);    /* center dip */
+  s.bezierCurveTo(0.13,1.16, 0.20,1.47, 0.45,1.49);      /* right cusp */
+  s.bezierCurveTo(0.86,1.52, 1.07,1.16, 1.00,0.62);
+  s.bezierCurveTo(0.95,-0.12, 0.93,-0.84, 0.66,-1.40);   /* outer right side → right foot */
+  s.bezierCurveTo(0.50,-1.63, 0.33,-1.55, 0.30,-0.98);   /* round right foot, up inner */
+  s.bezierCurveTo(0.26,-0.58, -0.26,-0.58, -0.30,-0.98); /* U notch between feet */
+  s.bezierCurveTo(-0.33,-1.55, -0.50,-1.63, -0.66,-1.40);/* round left foot */
+  s.bezierCurveTo(-0.93,-0.84, -0.95,-0.12, -1.00,0.62);
+  var geo=new THREE.ExtrudeGeometry(s,{depth:0.6,bevelEnabled:true,bevelThickness:0.3,bevelSize:0.16,bevelSegments:8,curveSegments:64});
+  geo.center();
+  var mat=new THREE.MeshPhysicalMaterial({color:0xf3e9d6,roughness:0.33,metalness:0.0,clearcoat:1.0,clearcoatRoughness:0.22,reflectivity:0.5,envMapIntensity:0.7});
+  var tooth=new THREE.Mesh(geo,mat);
+  var grp=new THREE.Group(); grp.add(tooth); scene.add(grp);
+
+  /* whitening sparkles */
+  var sc=document.createElement('canvas'); sc.width=sc.height=64; var sx=sc.getContext('2d');
+  var sg=sx.createRadialGradient(32,32,0,32,32,32); sg.addColorStop(0,'rgba(255,255,255,1)'); sg.addColorStop(.3,'rgba(255,243,220,.85)'); sg.addColorStop(1,'rgba(255,243,220,0)');
+  sx.fillStyle=sg; sx.fillRect(0,0,64,64);
+  var stx=new THREE.CanvasTexture(sc), sparks=[];
+  for(var i=0;i<8;i++){ var sp=new THREE.Sprite(new THREE.SpriteMaterial({map:stx,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending}));
+    sp.userData={a:Math.random()*6.283,rad:2.0+Math.random()*1.3,sp:0.15+Math.random()*0.4,ph:Math.random()*6.283,y:(Math.random()-0.5)*3.0}; sp.scale.setScalar(0.001); grp.add(sp); sparks.push(sp); }
+
+  function layout(){ var w=host.clientWidth||1, h=host.clientHeight||1; renderer.setSize(w,h,false); camera.aspect=w/h; camera.updateProjectionMatrix();
+    var narrow=w<760; grp.position.x = narrow?-0.4:-2.35; grp.position.y = narrow?-1.35:0.05; grp.scale.setScalar(narrow?0.62:0.86); }
+  layout(); window.addEventListener('resize',layout);
+
+  var t0=Date.now();
+  (function loop(){ requestAnimationFrame(loop); var t=(Date.now()-t0)/1000;
+    grp.rotation.y=Math.sin(t*0.45)*0.55; grp.rotation.x=Math.sin(t*0.38)*0.13; grp.rotation.z=Math.sin(t*0.3)*0.04;
+    tooth.position.y=Math.sin(t*0.85)*0.10;
+    for(var i=0;i<sparks.length;i++){ var s2=sparks[i],u=s2.userData,an=u.a+t*u.sp; s2.position.set(Math.cos(an)*u.rad,u.y+Math.sin(t*0.8+u.ph)*0.25,Math.sin(an)*u.rad*0.6); var tw=Math.sin(t*2.3+u.ph)*0.5+0.5; s2.scale.setScalar(0.14+tw*0.55); s2.material.opacity=tw*0.95; }
+    renderer.render(scene,camera);
+  })();
+})();
+</script>
+<script>
+const NS="pure:", root=document.documentElement, WA="96522280100";
+const waText={ hero:"هلا، حاب أحجز موعد في مركز بيور لطب الأسنان 🌸", smartee:"هلا، حاب أستفسر عن تقويم سمارتي الشفّاف في بيور.", contact:"هلا مركز بيور، عندي استفسار وحاب أتواصل معكم 🌸" };
+function waLink(t){ return "https://wa.me/"+WA+"?text="+encodeURIComponent(t); }
+[["wa-hdr","hero"],["wa-hero","hero"],["wa-smartee","smartee"],["wa-info","contact"],["wa-foot","contact"],["wa-foot2","contact"],["wa-fab","hero"]].forEach(([id,k])=>{ const el=document.getElementById(id); if(el) el.href=waLink(waText[k]); });
+function toArNum(s){ return String(s).replace(/[0-9]/g,d=>"٠١٢٣٤٥٦٧٨٩"[d]); }
+function setTheme(t){ root.setAttribute("data-theme",t); localStorage.setItem(NS+"theme",t); document.getElementById("themeBtn").textContent=t==="dark"?"☀":"☾"; }
+function applyLang(l){
+  root.setAttribute("lang",l); root.setAttribute("dir",l==="ar"?"rtl":"ltr"); localStorage.setItem(NS+"lang",l);
+  document.getElementById("langBtn").textContent=l==="ar"?"EN":"ع";
+  document.querySelectorAll("[data-en]").forEach(el=>{ const v=l==="ar"?el.dataset.ar:el.dataset.en; if(v!=null) el.innerHTML=v; });
+  document.querySelectorAll("[data-en-ph]").forEach(el=>{ el.placeholder=l==="ar"?el.dataset.arPh:el.dataset.enPh; });
+  document.querySelectorAll("[data-num]").forEach(el=>{ const raw=(+el.dataset.num).toLocaleString("en-US"); el.textContent=l==="ar"?toArNum(raw):raw; });
+}
+applyLang(localStorage.getItem(NS+"lang")||"ar");
+(()=>{ const t=document.querySelector(".rev-track"); if(t) t.innerHTML+=t.innerHTML; })();
+setTheme(localStorage.getItem(NS+"theme")||"light");
+document.getElementById("langBtn").onclick=()=>{ applyLang(root.getAttribute("lang")==="ar"?"en":"ar"); setTimeout(()=>window.__capReset&&window.__capReset(),60); };
+document.getElementById("themeBtn").onclick=()=>setTheme(root.getAttribute("data-theme")==="dark"?"light":"dark");
+const nav=document.getElementById("nav");
+document.getElementById("burger").onclick=()=>nav.classList.toggle("open");
+nav.querySelectorAll("a").forEach(a=>a.onclick=()=>nav.classList.remove("open"));
+
+function waSubmit(e){ e.preventDefault();
+  const n=document.getElementById("f-name").value.trim(), p=document.getElementById("f-phone").value.trim(), s=document.getElementById("f-svc").value, m=document.getElementById("f-msg").value.trim();
+  let t="هلا مركز بيور 🌸\n";
+  if(n) t+="الاسم: "+n+"\n"; if(p) t+="الهاتف: "+p+"\n"; if(s) t+="الخدمة: "+s+"\n"; if(m) t+="ملاحظات: "+m;
+  window.open(waLink(t),"_blank"); return false;
+}
+
+/* reveals + replay */
+root.classList.add("p-ready");
+function settle(el){ setTimeout(()=>{ el.style.animation="none"; el.style.opacity="1"; el.style.transform="none"; },1500); }
+const revealed=new WeakSet();
+function fireReveal(el){ if(revealed.has(el))return; revealed.add(el); el.classList.add("in"); settle(el); }
+const reveals=[...document.querySelectorAll(".reveal")];
+function checkReveals(){ reveals.forEach(el=>{ const r=el.getBoundingClientRect(); if(r.top<innerHeight*0.92 && r.bottom>0) fireReveal(el); }); }
+addEventListener("scroll",checkReveals,{passive:true}); addEventListener("resize",checkReveals); checkReveals(); setTimeout(checkReveals,300);
+
+/* services + why cards — pop REPLAYS on every entry (leave & return → re-fires) */
+function cardCheck(sel){ document.querySelectorAll(sel).forEach(c=>{ const r=c.getBoundingClientRect(); const inv=r.top<innerHeight*0.88 && r.bottom>40; if(inv){ if(!c.classList.contains("in")) c.classList.add("in"); } else if(r.bottom<0||r.top>innerHeight){ c.classList.remove("in"); } }); }
+addEventListener("scroll",()=>{ cardCheck(".svc-grid .card"); cardCheck(".why-grid .why"); },{passive:true});
+cardCheck(".svc-grid .card"); cardCheck(".why-grid .why"); setTimeout(()=>{ cardCheck(".svc-grid .card"); cardCheck(".why-grid .why"); },300);
+
+/* trust count-up — REPLAYS on entry (setInterval, not rAF) */
+const capGrid=document.querySelector(".trust-grid");
+if(capGrid){ const nums=[...capGrid.querySelectorAll(".n bdi")]; let vis=false;
+  const fmt=v=>{ const raw=(+v).toLocaleString("en-US"); return root.getAttribute("lang")==="ar"?toArNum(raw):raw; };
+  const up=el=>{ const target=+el.dataset.num, dur=1200, t0=Date.now(); clearInterval(el.__iv); el.textContent=fmt(0);
+    el.__iv=setInterval(()=>{ const p=Math.min(1,(Date.now()-t0)/dur),e=1-Math.pow(1-p,3); el.textContent=fmt(Math.round(e*target)); if(p>=1)clearInterval(el.__iv); },33); };
+  const capIn=()=>{ const r=capGrid.getBoundingClientRect(); return r.bottom>40 && r.top<innerHeight-40; };
+  const capCheck=()=>{ const now=capIn(); if(now&&!vis){ vis=true; nums.forEach(up); } else if(!now&&vis){ vis=false; nums.forEach(n=>{ clearInterval(n.__iv); n.textContent=fmt(0); }); } };
+  if(!capIn()) nums.forEach(n=>n.textContent=fmt(0));
+  addEventListener("scroll",capCheck,{passive:true}); addEventListener("resize",capCheck); setTimeout(capCheck,400);
+  window.__capReset=()=>{ if(!vis) nums.forEach(n=>n.textContent=fmt(0)); };
+}
+
+/* before/after slider */
+const ba=document.getElementById("ba");
+if(ba){ const before=ba.querySelector(".before"), handle=document.getElementById("ba-handle"), knob=document.getElementById("ba-knob");
+  let demoed=false;
+  function setPos(pct){ pct=Math.max(2,Math.min(98,pct));
+    const rtl=root.getAttribute("dir")==="rtl";
+    before.style.clipPath = rtl ? "inset(0 "+pct+"% 0 0)" : "inset(0 0 0 "+pct+"%)";
+    handle.style.insetInlineStart=pct+"%"; knob.style.insetInlineStart=pct+"%";
+  }
+  function fromEvent(e){ const r=ba.getBoundingClientRect(); const x=(e.touches?e.touches[0].clientX:e.clientX)-r.left; let pct=x/r.width*100; if(root.getAttribute("dir")==="rtl") pct=100-pct; setPos(pct); }
+  let drag=false;
+  ba.addEventListener("pointerdown",e=>{ drag=true; fromEvent(e); });
+  addEventListener("pointermove",e=>{ if(drag) fromEvent(e); });
+  addEventListener("pointerup",()=>drag=false);
+  ba.addEventListener("touchmove",fromEvent,{passive:true});
+  setPos(50);
+  const baIO=()=>{ const r=ba.getBoundingClientRect(); if(!demoed && r.top<innerHeight*.7 && r.bottom>0){ demoed=true; let p=50,dir=1,n=0; const id=setInterval(()=>{ p+=dir*2.2; if(p>72){dir=-1;} if(p<30){dir=1; n++;} setPos(p); if(n>=1 && p>=49){ setPos(50); clearInterval(id);} },22); } };
+  addEventListener("scroll",baIO,{passive:true}); setTimeout(baIO,600);
+}
+</script>
+</body>
+</html>
